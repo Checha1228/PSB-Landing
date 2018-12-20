@@ -19,8 +19,8 @@ const gulp        = require('gulp'),
 
 //data
 const pkg   = require('./frontend.json'),
-      debug = argv.dev;
-
+      debug = argv.dev,
+      color = argv.color;
 
 //Rutas
 const routes = {
@@ -101,7 +101,6 @@ gulp.task('csslint', () =>{
   return gulp.src([routes.src + routes.stylus + '**/*.styl', '!'+routes.src + routes.stylus + 'bootstrap/**/*.**' ])
         .pipe(stylint({
           rules:{
-            'sortOrder': 'alphabetical',
             'namingConvention': {
                 'expect': 'lowercase-dash',
                 'error': true
@@ -115,7 +114,6 @@ gulp.task('csslint', () =>{
             'groupOutputByFile': true,
             'namingConventionStrict': true,
             'prefixVarsWithDollar': 'always'
-
           }
 
         }))
@@ -145,6 +143,7 @@ gulp.task('views',  () =>{
     .pipe(data( function (file) {
       return {
         debug: debug,
+        color: color,
         name: pkg.name
       };
     }))
