@@ -4,7 +4,7 @@
  * @link 
  * @link Lady Castillo - ladycastdg@gmail.com
  * @license 
- *Wed Dec 19 2018 21:49:26 GMT-0500 (-05)
+ *Wed Dec 19 2018 22:45:31 GMT-0500 (-05)
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -84,6 +84,18 @@ svg {
 .cont-all-landing-psb .cont-objetives-program,
 .cont-all-landing-psb .cont-info-payment {
   margin: 0 auto;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -o-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   width: 90%;
 }
 .cont-social-psb {
@@ -618,5 +630,65 @@ svg {
   background-color: #fff;
   color: #34334f;
 }
-
-/*# sourceMappingURL=../maps/style.css.map */
+.cont-footer-psb {
+  background-color: #34334f;
+}
+.cont-footer-psb .cont-info-footer {
+  color: #ccc;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -o-box-orient: vertical;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding: 20px;
+}
+.cont-footer-psb .cont-info-footer .title-footer {
+  font-size: 1.1rem;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+.cont-footer-psb .cont-info-footer .text-item-contact,
+.cont-footer-psb .cont-info-footer .text-footer {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.cont-footer-psb .cont-contact .list-contact {
+  list-style: none;
+  margin: 20px auto;
+  padding: 0;
+  width: 80%;
+}
+.cont-footer-psb .cont-contact .list-contact .item-contact {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  margin-bottom: 10px;
+}
+.cont-footer-psb .cont-contact .list-contact .item-contact .icon-item-contact {
+  display: inline-block;
+  margin-right: 20px;
+  width: 40px;
+}
+.cont-footer-psb .cont-contact .list-contact .item-contact .text-item-contact {
+  font-size: 1rem;
+}
+.cont-footer-psb .cont-text-footer {
+  background-color: #242437;
+  padding: 10px;
+}
+.cont-footer-psb .cont-text-footer .text-footer {
+  color: #c99a4a;
+  font-size: 0.6rem;
+  margin: 0;
+}
