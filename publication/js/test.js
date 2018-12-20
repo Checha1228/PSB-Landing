@@ -13,7 +13,13 @@ demo = function demo() {
 	}
 };
 
-jQuery(document).ready(function ($) {
-	console.log('hola');
-});
+function functionMenu() {
+	var x = document.getElementById("menu-psb-landing");
+	if (x.className === "menu-landing-psb") {
+		x.className += " responsive-menu";
+	} else {
+		x.className = "menu-landing-psb";
+	}
+	$('.icon-hamburger').toggleClass('active');
+}
 //# sourceMappingURL=../maps/test.js.map

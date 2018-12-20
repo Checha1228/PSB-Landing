@@ -1,0 +1,56 @@
+.cont-menu-psb
+	box-shadow 1px 0 0 $rojo
+	position fixed
+	width 100%
+	z-index 3
+
+	.menu-landing-psb
+		background-color $blanco
+		overflow hidden
+		position relative
+		
+		.item-menu
+			border-bottom 4px solid $blanco
+			color $gris
+			display block
+			float left
+			font-size 1rem
+			padding 14px 16px
+			text-decoration none
+			transition all 0.4s ease
+			width 100%
+
+			&.cont-logo-psb
+				width 70px
+
+				&:hover
+					border-bottom 4px solid $blanco
+
+			&:hover,
+			&.active
+				border-bottom 4px solid $dorado
+
+			&:not(:first-child)
+				display none
+				
+			&.icon-menu
+				display block
+				position absolute
+				right 0
+				width 30px
+
+				&:hover
+					border-bottom 4px solid $blanco
+
+		&.responsive-menu
+			
+			.icon-menu
+			 	position absolute
+				right 0
+				top 0
+				
+			.item-menu
+				display block
+				float none
+		
+		
