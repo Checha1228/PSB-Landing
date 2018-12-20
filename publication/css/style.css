@@ -4,11 +4,7 @@
  * @link 
  * @link Lady Castillo - ladycastdg@gmail.com
  * @license 
-<<<<<<< HEAD
- *Thu Dec 20 2018 01:14:10 GMT-0500 (-05)
-=======
- *Wed Dec 19 2018 22:54:31 GMT-0500 (-05)
->>>>>>> 55bbaab40f39bba5e4f2507a425e39139749fc09
+ *Thu Dec 20 2018 17:20:30 GMT-0500 (-05)
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -87,7 +83,7 @@ svg {
 .cont-all-landing-psb .cont-program-psb,
 .cont-all-landing-psb .cont-plan-program,
 .cont-all-landing-psb .cont-objetives-program,
-.cont-all-landing-psb .cont-info-payment {
+.cont-all-landing-psb .cont-detail-payment {
   margin: 0 auto;
   display: -webkit-box;
   display: -moz-box;
@@ -736,6 +732,7 @@ svg {
   font-size: 0.9rem;
   font-weight: 300;
   margin-top: 10px;
+  text-align: justify;
 }
 .cont-footer-psb .cont-contact .list-contact {
   list-style: none;
@@ -770,8 +767,8 @@ svg {
   margin: 0;
 }
 .cont-menu-psb {
-  -webkit-box-shadow: 1px 0 0 #ba0207;
-  box-shadow: 1px 0 0 #ba0207;
+  -webkit-box-shadow: 0px 2px 0px 1px #666;
+  box-shadow: 0px 2px 0px 1px #666;
   position: fixed;
   width: 100%;
   z-index: 3;
@@ -789,11 +786,6 @@ svg {
   font-size: 1rem;
   padding: 14px 16px;
   text-decoration: none;
-  -o-transition: all 0.4s ease;
-  -ms-transition: all 0.4s ease;
-  -webkit-transition: all 0.4s ease;
-  -moz-transition: all 0.4s ease;
-  transition: all 0.4s ease;
   width: 100%;
 }
 .cont-menu-psb .menu-landing-psb .item-menu.cont-logo-psb {
@@ -827,47 +819,52 @@ svg {
   display: block;
   float: none;
 }
-100% {
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
 @-moz-keyframes inM {
-  50% {
-    -o-transform: rotate(0);
-    -ms-transform: rotate(0);
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    transform: rotate(0);
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @-webkit-keyframes inM {
-  50% {
-    -o-transform: rotate(0);
-    -ms-transform: rotate(0);
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    transform: rotate(0);
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @-o-keyframes inM {
-  50% {
-    -o-transform: rotate(0);
-    -ms-transform: rotate(0);
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    transform: rotate(0);
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @keyframes inM {
-  50% {
-    -o-transform: rotate(0);
-    -ms-transform: rotate(0);
-    -webkit-transform: rotate(0);
-    -moz-transform: rotate(0);
-    transform: rotate(0);
+  0% {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+  }
+  100% {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
   }
 }
 @-moz-keyframes outM {
@@ -1134,11 +1131,11 @@ svg {
     transform: translateY(-9px) rotate(0deg);
   }
   100% {
-    -o-transform: translateY(-9px) rotate(135deg);
-    -ms-transform: translateY(-9px) rotate(135deg);
-    -webkit-transform: translateY(-9px) rotate(135deg);
-    -moz-transform: translateY(-9px) rotate(135deg);
-    transform: translateY(-9px) rotate(135deg);
+    -o-transform: translateY(-9px) rotate(-135deg);
+    -ms-transform: translateY(-9px) rotate(-135deg);
+    -webkit-transform: translateY(-9px) rotate(-135deg);
+    -moz-transform: translateY(-9px) rotate(-135deg);
+    transform: translateY(-9px) rotate(-135deg);
   }
 }
 @-webkit-keyframes inBtm {
@@ -1157,11 +1154,11 @@ svg {
     transform: translateY(-9px) rotate(0deg);
   }
   100% {
-    -o-transform: translateY(-9px) rotate(135deg);
-    -ms-transform: translateY(-9px) rotate(135deg);
-    -webkit-transform: translateY(-9px) rotate(135deg);
-    -moz-transform: translateY(-9px) rotate(135deg);
-    transform: translateY(-9px) rotate(135deg);
+    -o-transform: translateY(-9px) rotate(-135deg);
+    -ms-transform: translateY(-9px) rotate(-135deg);
+    -webkit-transform: translateY(-9px) rotate(-135deg);
+    -moz-transform: translateY(-9px) rotate(-135deg);
+    transform: translateY(-9px) rotate(-135deg);
   }
 }
 @-o-keyframes inBtm {
@@ -1180,11 +1177,11 @@ svg {
     transform: translateY(-9px) rotate(0deg);
   }
   100% {
-    -o-transform: translateY(-9px) rotate(135deg);
-    -ms-transform: translateY(-9px) rotate(135deg);
-    -webkit-transform: translateY(-9px) rotate(135deg);
-    -moz-transform: translateY(-9px) rotate(135deg);
-    transform: translateY(-9px) rotate(135deg);
+    -o-transform: translateY(-9px) rotate(-135deg);
+    -ms-transform: translateY(-9px) rotate(-135deg);
+    -webkit-transform: translateY(-9px) rotate(-135deg);
+    -moz-transform: translateY(-9px) rotate(-135deg);
+    transform: translateY(-9px) rotate(-135deg);
   }
 }
 @keyframes inBtm {
@@ -1203,11 +1200,11 @@ svg {
     transform: translateY(-9px) rotate(0deg);
   }
   100% {
-    -o-transform: translateY(-9px) rotate(135deg);
-    -ms-transform: translateY(-9px) rotate(135deg);
-    -webkit-transform: translateY(-9px) rotate(135deg);
-    -moz-transform: translateY(-9px) rotate(135deg);
-    transform: translateY(-9px) rotate(135deg);
+    -o-transform: translateY(-9px) rotate(-135deg);
+    -ms-transform: translateY(-9px) rotate(-135deg);
+    -webkit-transform: translateY(-9px) rotate(-135deg);
+    -moz-transform: translateY(-9px) rotate(-135deg);
+    transform: translateY(-9px) rotate(-135deg);
   }
 }
 @-moz-keyframes outBtm {
@@ -1226,11 +1223,11 @@ svg {
     transform: translateY(-9px) rotate(0deg);
   }
   100% {
-    -o-transform: translateY(-9px) rotate(135deg);
-    -ms-transform: translateY(-9px) rotate(135deg);
-    -webkit-transform: translateY(-9px) rotate(135deg);
-    -moz-transform: translateY(-9px) rotate(135deg);
-    transform: translateY(-9px) rotate(135deg);
+    -o-transform: translateY(-9px) rotate(-135deg);
+    -ms-transform: translateY(-9px) rotate(-135deg);
+    -webkit-transform: translateY(-9px) rotate(-135deg);
+    -moz-transform: translateY(-9px) rotate(-135deg);
+    transform: translateY(-9px) rotate(-135deg);
   }
 }
 @-webkit-keyframes outBtm {
@@ -1249,11 +1246,11 @@ svg {
     transform: translateY(-9px) rotate(0deg);
   }
   100% {
-    -o-transform: translateY(-9px) rotate(135deg);
-    -ms-transform: translateY(-9px) rotate(135deg);
-    -webkit-transform: translateY(-9px) rotate(135deg);
-    -moz-transform: translateY(-9px) rotate(135deg);
-    transform: translateY(-9px) rotate(135deg);
+    -o-transform: translateY(-9px) rotate(-135deg);
+    -ms-transform: translateY(-9px) rotate(-135deg);
+    -webkit-transform: translateY(-9px) rotate(-135deg);
+    -moz-transform: translateY(-9px) rotate(-135deg);
+    transform: translateY(-9px) rotate(-135deg);
   }
 }
 @-o-keyframes outBtm {
@@ -1272,11 +1269,11 @@ svg {
     transform: translateY(-9px) rotate(0deg);
   }
   100% {
-    -o-transform: translateY(-9px) rotate(135deg);
-    -ms-transform: translateY(-9px) rotate(135deg);
-    -webkit-transform: translateY(-9px) rotate(135deg);
-    -moz-transform: translateY(-9px) rotate(135deg);
-    transform: translateY(-9px) rotate(135deg);
+    -o-transform: translateY(-9px) rotate(-135deg);
+    -ms-transform: translateY(-9px) rotate(-135deg);
+    -webkit-transform: translateY(-9px) rotate(-135deg);
+    -moz-transform: translateY(-9px) rotate(-135deg);
+    transform: translateY(-9px) rotate(-135deg);
   }
 }
 @keyframes outBtm {
@@ -1295,11 +1292,113 @@ svg {
     transform: translateY(-9px) rotate(0deg);
   }
   100% {
-    -o-transform: translateY(-9px) rotate(135deg);
-    -ms-transform: translateY(-9px) rotate(135deg);
-    -webkit-transform: translateY(-9px) rotate(135deg);
-    -moz-transform: translateY(-9px) rotate(135deg);
-    transform: translateY(-9px) rotate(135deg);
+    -o-transform: translateY(-9px) rotate(-135deg);
+    -ms-transform: translateY(-9px) rotate(-135deg);
+    -webkit-transform: translateY(-9px) rotate(-135deg);
+    -moz-transform: translateY(-9px) rotate(-135deg);
+    transform: translateY(-9px) rotate(-135deg);
+  }
+}
+@media screen and (min-width: 750px) {
+  .cont-menu-psb .menu-landing-psb .item-menu {
+    float: left;
+    font-size: 1rem;
+    font-weight: 300;
+    height: 56px;
+    margin-top: 54px;
+    text-align: center;
+    width: 16%;
+  }
+  .cont-menu-psb .menu-landing-psb .item-menu:not(:first-child) {
+    display: block;
+  }
+  .cont-menu-psb .menu-landing-psb .item-menu.cont-logo-psb {
+    margin: 0 20px;
+    width: 100px;
+  }
+  .cont-menu-psb .menu-landing-psb .item-menu.icon-menu {
+    display: none;
+  }
+  .cont-menu-psb .menu-landing-psb.responsive-menu .item-menu {
+    float: left;
+    font-size: 1rem;
+    font-weight: 300;
+    height: 56px;
+    margin-top: 54px;
+    text-align: center;
+    width: 16%;
+  }
+  .cont-menu-psb .menu-landing-psb.responsive-menu:not(:first-child) {
+    display: block;
+  }
+  .cont-all-landing-psb.formulario-header {
+    padding-top: 184px;
+  }
+  .cont-all-landing-psb .cont-program-psb,
+  .cont-all-landing-psb .plan-program-psb,
+  .cont-all-landing-psb .cont-detail-payment {
+    -o-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+  .cont-form-program .title-form-program {
+    font-size: 1.4rem;
+  }
+  .cont-form-program .intro-form-program {
+    width: 90%;
+  }
+  .cont-intro-program-psb {
+    margin-right: 40px;
+    width: 90%;
+  }
+  .cont-title-program {
+    text-align: left;
+  }
+  .title-plan-program {
+    margin: 20px auto 50px;
+  }
+  .cont-plan-program .plan-program-psb .detail-program {
+    margin: 0 20px;
+  }
+  .cont-btn-plan {
+    margin: 40px auto 20px;
+    width: 30%;
+  }
+  .cont-list-program {
+    width: 100%;
+  }
+  .cont-objetives-program .title-plan-program {
+    margin: 20px 0;
+    text-align: left;
+  }
+  .cont-objetives-program .cont-list-program {
+    width: 46%;
+  }
+  .detail-payment {
+    margin: 30px auto;
+  }
+  .cont-footer-psb .cont-info-footer {
+    -o-box-orient: horizontal;
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+  .cont-footer-psb .cont-info-footer .cont-about-us,
+  .cont-footer-psb .cont-info-footer .cont-contact,
+  .cont-footer-psb .cont-info-footer .cont-map-psb {
+    width: 34%;
+  }
+  .cont-footer-psb .cont-contact .list-contact .item-contact {
+    margin-bottom: 6px;
+  }
+  .cont-footer-psb .cont-contact .list-contact .item-contact .icon-item-contact {
+    margin-right: 16px;
+    width: 30px;
   }
 }
 
