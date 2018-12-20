@@ -19,8 +19,8 @@ const gulp        = require('gulp'),
 
 //data
 const pkg   = require('./frontend.json'),
-      debug = argv.dev;
-
+      debug = argv.dev,
+      color = argv.color;
 
 //Rutas
 const routes = {
@@ -114,7 +114,6 @@ gulp.task('csslint', () =>{
             'groupOutputByFile': true,
             'namingConventionStrict': true,
             'prefixVarsWithDollar': 'always'
-
           }
 
         }))
@@ -144,6 +143,7 @@ gulp.task('views',  () =>{
     .pipe(data( function (file) {
       return {
         debug: debug,
+        color: color,
         name: pkg.name
       };
     }))

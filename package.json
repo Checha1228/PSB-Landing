@@ -6,7 +6,11 @@
   },
   "scripts": {
     "preinstall": "cp pre-commit .git/hooks/ && chmod -R 777 .git/hooks/pre-commit",
-    "start": "gulp watch --dev",
+    "start:fucsia": "gulp watch --dev --color fucsia",
+    "start:rojo": "gulp watch --dev --color rojo",
+    "start:amarillo": "gulp watch --dev --color amarillo",
+    "start:azul": "gulp watch --dev --color azul",
+    "start:morado": "gulp watch --dev --color morado",
     "js:watch": "gulp js:watch",
     "finalizar": "rm publication/*.html && rm publication/css/style.css && mv publication/js/libs/ publication/ && rm publication/js/*.js && mv publication/libs publication/js && gulp libs && gulp css && gulp minicss && gulp js && gulp js:ugly && gulp views && rm publication/**/concat.**.** && rm publication/css/style.css &&rm -R publication/maps && gulp limpiar"
   },

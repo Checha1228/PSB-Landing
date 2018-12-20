@@ -41,7 +41,7 @@ block content
 							p.text-list-program.blanco
 								|Fórmate como profesional integral en las nuevas técnicas gráficas  digitales e impresas que exige el mundo laboral actual.
 			div.cont-form-program
-				h2.title-form-program.fucsia
+				h2.title-form-program(class=color)
 					|Inscríbete con el 30% de DESCUENTO
 				
 				p.intro-form-program
@@ -77,15 +77,15 @@ block content
 					div.group-form
 						label.cont-check-terms
 							input.option-terms(type="radio", name="terms")
-							span.icon-checkmark.bg-fucsia
+							span.icon-checkmark(class="bg-"+color)
 							p.text-input-terms
 								|Acepto Política de Privacidad y las Condiciones de Uso.
 					
 					div.cont-btn-form
-						button.btn-default-landing.bg-fucsia
+						button.btn-default-landing(class="bg-"+color)
 							|Enviar
 		//-Redes
-		article.cont-social-psb.bg-fucsia
+		article.cont-social-psb(class="bg-"+color)
 			div.cont-icon-social-facebook
 				a.blanco(href="#")
 					include ../templates/partials/icon-facebook.pug
@@ -116,7 +116,7 @@ block content
 		article.cont-plan-program
 			h3.title-plan-program
 				|¿Qué consigues 
-				span.fucsia
+				span(class=color)
 					|con psb?
 			div.plan-program-psb
 				div.detail-program
@@ -136,7 +136,7 @@ block content
 						|Desenvuélvete en la planificación, ejecución y control de procesos creativos y técnicos. 
 			
 			div.cont-btn-plan
-				button.btn-default-psb.bg-fucsia
+				button.btn-default-psb(class="bg-"+color)
 					|Plan de Estudios
 				i.icon-arrow-btn
 					|>
@@ -145,31 +145,31 @@ block content
 		article.cont-objetives-program
 			h3.title-plan-program
 				|objetivos 
-				span.fucsia
+				span(class=color)
 					|del programa
 			div.cont-list-program
 				ul.list-header-program
 					li.item-list-header
 						i.icon-check
-							i.icon-check.fucsia
+							i.icon-check(class=color)
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
 							|Formar estrategas que desarrollen un estilo propio de producción gráfica, con creatividad  y proyección.
 					li.item-list-header
 						i.icon-check
-							i.icon-check.fucsia
+							i.icon-check(class=color)
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
 							|Sé un experto diseñador de identidad visual, multimedia, marcas, gestión de imagen corporativa, fotografía publicitaria, impresos, nuevas tecnologías.
 					li.item-list-header
 						i.icon-check
-							i.icon-check.fucsia
+							i.icon-check(class=color)
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
 							|Ofrecer al egresado la experiencia y conocimiento necesario para que obtenga altas oportunidades de ocupación laboral.
 					li.item-list-header
 						i.icon-check
-							i.icon-check.fucsia
+							i.icon-check(class=color)
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
 							|Dar la posibilidad a nuestros estudiantes de proyectarse en corto tiempo hacía el mercado Publicitario.
@@ -178,32 +178,32 @@ block content
 		article.cont-info-payment
 			div.cont-detail-payment
 				div.detail-payment
-					i.icon-check.fucsia
+					i.icon-check(class=color)
 						include ../templates/partials/icon-check.pug
 					p.text-detail-payment
 						|CRÉDITO 
 						br
-						span.fucsia
+						span(class=color)
 							|DIRECTO
 				div.detail-payment
-					i.icon-check.fucsia
+					i.icon-check(class=color)
 						include ../templates/partials/icon-check.pug
 					p.text-detail-payment
 						|DESCUENTO 30%
 						br
-						span.fucsia
+						span(class=color)
 							|MATRÍCULA
 				div.detail-payment
-					i.icon-check.fucsia
+					i.icon-check(class=color)
 						include ../templates/partials/icon-check.pug
 					p.text-detail-payment
 						|HOMOLOGACIÓN 
 						br
-						span.fucsia
+						span(class=color)
 							|DE ESTUDIOS
 			
 			div.cont-btn-plan
-				button.btn-default-psb.bg-fucsia
+				button.btn-default-psb(class="bg-"+color)
 					|Quiero más información
 				i.icon-arrow-btn
 					|>
