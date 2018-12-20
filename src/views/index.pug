@@ -3,7 +3,7 @@ extends ../templates/base.pug
 
 //-Etiqueta Title
 block title
-	title Ejemplo de meta title
+	title Programas Politécnic Santafé de Bogotá
 
 //-Etiqueta Metadescription
 block description
@@ -95,6 +95,22 @@ block content
 			div.cont-icon-social-linkedin
 				a.blanco(href="#")
 					include ../templates/partials/icon-linkedin.pug
+		//-Modal
+		div.cont-modal-form
+			div.cont-info-modal
+				div.cont-icon-modal
+					img.img-responsive(src="images/headphone.svg", alt="")
+				
+				div.cont-text-modal
+					h3.title-modal
+						|Tu formulario se ha enviado correctamente
+					
+					p.text-modal
+						|Gracias por confiar en nosotros, uno de nuestros asesores se comunicará pronto.
+				
+					div.cont-btn-form
+						button.btn-default-landing.bg-fucsia
+							|Aceptar
 	//-Que
 	section.cont-all-landing-psb
 		article.cont-plan-program

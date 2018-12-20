@@ -4,7 +4,7 @@
  * @link 
  * @link Lady Castillo - ladycastdg@gmail.com
  * @license 
- *Wed Dec 19 2018 20:32:57 GMT-0500 (-05)
+ *Wed Dec 19 2018 21:49:26 GMT-0500 (-05)
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -169,22 +169,6 @@ svg {
   text-align: center;
   text-transform: uppercase;
   width: 90%;
-}
-.row {
-  margin-left: -15px;
-  margin-right: -15px;
-  margin: 0 auto;
-  max-width: 110rem;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-.row:before,
-.row:after {
-  content: " ";
-  display: table;
-}
-.row:after {
-  clear: both;
 }
 .container-fluid:before,
 .container-fluid:after {
@@ -574,6 +558,10 @@ svg {
 .cont-btn-plan .btn-default-psb.bg-morado {
   background: #36025c;
 }
+.cont-btn-plan .btn-default-psb:hover {
+  background: #fff;
+  color: #666;
+}
 .icon-arrow-btn {
   background-color: #e69902;
   color: #fff;
@@ -586,6 +574,49 @@ svg {
   top: 0;
   text-align: center;
   width: 34px;
+}
+.cont-all-landing-psb.formulario-header {
+  position: relative;
+}
+.cont-all-landing-psb .cont-modal-form {
+  background-color: rgba(0,0,0,0.9);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.cont-all-landing-psb .cont-modal-form .cont-info-modal {
+  background-color: #eaeaea;
+  border-radius: 12px;
+  margin: 25% auto 0;
+  padding: 20px;
+  width: 80%;
+}
+.cont-all-landing-psb .cont-modal-form .cont-info-modal .cont-icon-modal {
+  margin: 0 auto;
+  width: 40%;
+}
+.cont-all-landing-psb .cont-modal-form .cont-info-modal .cont-text-modal {
+  font-family: 'roboto', sans-serif;
+}
+.cont-all-landing-psb .cont-modal-form .cont-info-modal .cont-text-modal .title-modal {
+  color: #34334f;
+  font-weight: 700;
+  text-align: center;
+}
+.cont-all-landing-psb .cont-modal-form .cont-info-modal .cont-text-modal .text-modal {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 10px;
+  text-align: center;
+}
+.cont-all-landing-psb .cont-modal-form .cont-info-modal .btn-default-landing {
+  background-color: #34334f;
+  margin-bottom: 10px;
+}
+.cont-all-landing-psb .cont-modal-form .cont-info-modal .btn-default-landing:hover {
+  background-color: #fff;
+  color: #34334f;
 }
 
 /*# sourceMappingURL=../maps/style.css.map */

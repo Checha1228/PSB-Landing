@@ -101,7 +101,6 @@ gulp.task('csslint', () =>{
   return gulp.src([routes.src + routes.stylus + '**/*.styl', '!'+routes.src + routes.stylus + 'bootstrap/**/*.**' ])
         .pipe(stylint({
           rules:{
-            'sortOrder': 'alphabetical',
             'namingConvention': {
                 'expect': 'lowercase-dash',
                 'error': true
