@@ -47,30 +47,32 @@ block content
 				p.intro-form-program
 					|Conviértete en el experto que quieres ser
 				
-				form.form-program(action="informacion")
+				form.form-program#FormPSB
 					div.group-form
 						input#nombre.input-default(type="text", name="nombre", required)
-						label.label-default.fuscia(for="nombre")
+						label.label-default(for="nombre")
 							|Nombre y Apellido
 					div.group-form
-						input.input-default(type="text", name="email", required)
+						input#email.input-default(type="text", name="email", required)
 						label.label-default(for="email")
 							|Correo electrónico
 					div.group-form
-						input.input-default(type="text", name="numerocontacto", required)
+						input#numeroContacto.input-default(type="text", name="numerocontacto", required)
 						label.label-default(for="numerocontacto")
 							|Número de contacto
 					div.group-form
-						select.select-default.arrow-select(name="")
+						select#ciudad.select-default.arrow-select(name="ciudad")
+							option(value="", selected)
+								|Ciudad
 							option(value="0")
 								|Bogotá
 							option(value="1")
 								|Cali
-						label.label-default(for="")
-							|Ciudad
 					div.group-form
-						select.select-default.arrow-select(name="")
-							option(value="0" selected)
+						select#programa.select-default.arrow-select(name="programa")
+							option(value="", selected)
+								|Programa de interes
+							option(value="0")
 								|Tecnología en Producción Gráfica para Medios Publicitarios
 							option(value="1")
 								|Realización Audiovisiual	
@@ -82,8 +84,8 @@ block content
 								|Acepto Política de Privacidad y las Condiciones de Uso.
 					
 					div.cont-btn-form
-						button.btn-default-landing(class="bg-"+color)
-							|Enviar
+						input.btn-default-landing(class="bg-"+color,type="submit",value="Enviar")
+							
 		//-Redes
 		article.cont-social-psb(class="bg-"+color)
 			div.cont-icon-social-facebook
@@ -109,7 +111,7 @@ block content
 						|Gracias por confiar en nosotros, uno de nuestros asesores se comunicará pronto.
 				
 					div.cont-btn-form
-						button.btn-default-landing
+						button#Aceptar.btn-default-landing
 							|Aceptar
 	//-Que
 	section.cont-all-landing-psb
