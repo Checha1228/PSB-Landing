@@ -1,0 +1,129 @@
+/*
+-deben ser elementos por default que lucirán igual en todo el sitio, es .
+-ningún estilo de estos elementos selectores deberá usar !important.
+-no usar selectores tipo class o id.
+*/
+
+	
+a
+	text-decoration none
+	
+	&:hover
+		text-decoration underline
+		
+	img
+		border 0
+	
+body
+	font-family $roboto
+	font-size 1.3em
+	margin 0
+	padding 0
+
+svg 
+	fill currentColor
+
+.img-responsive
+	width 100%
+
+.fucsia
+	color $fucsia
+
+.rojo	
+	color $rojo
+
+.amarillo
+	color $amarillo
+
+.azul
+	color $azul
+
+.morado
+	color $morado
+
+.blanco
+	color $blanco
+
+.gris
+	color $gris
+
+.cont-all-landing-psb
+	width 100%
+
+	&.formulario-header
+		background-image url('../images/Img-Banner-PGraficaM.png')
+		background-repeat no-repeat
+		background-size cover
+
+	&.objetives-section
+		background-image url('../images/Img-Banner-PGrafica.jpg')
+		background-repeat no-repeat
+		background-size cover
+
+	.cont-program-psb,
+	.cont-plan-program,
+	.cont-objetives-program,
+	.cont-info-payment
+		margin 0 auto
+		width 90%
+
+.cont-social-psb
+	display flex
+	margin-top 40px
+	padding 20px 0
+
+	&.bg-fucsia
+		background $fucsia
+	
+	&.bg-rojo
+		background $rojo
+
+	&.bg-amarillo
+		background $amarillo
+	
+	&.bg-azul
+		background $azul
+	
+	&.bg-morado
+		background $morado
+
+.cont-icon-social-facebook,
+.cont-icon-social-instagram,
+.cont-icon-social-linkedin
+	width 40px
+
+.cont-icon-social-facebook
+	margin-left 24%
+
+.cont-icon-social-instagram
+	margin 0 30px		
+
+.cont-plan-program,
+.cont-objetives-program,
+.cont-info-payment
+	padding 20px 0
+
+	.plan-program-psb
+		display flex
+		flex-direction column
+		
+		.detail-program
+			margin 20px 0
+
+			.icon-detail-program
+				margin 0 auto
+				width 26%
+
+			.text-detail-program
+				color $grisclaro
+				font-size 1.1rem 
+				font-weight $light   
+				margin 20px auto 0
+
+.title-plan-program
+	font-size 1.6rem 
+	font-weight $light   
+	margin 0 auto 10px
+	text-align center
+	text-transform uppercase
+	width 90%
