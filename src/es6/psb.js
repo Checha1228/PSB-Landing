@@ -18,7 +18,7 @@ jQuery(document).ready(function($) {
 			numeroContacto: "Ingresa tu número de contacto",
 			ciudad: "Selecciona tu ciudad",
 			programa: "Selecciona el programa que estas interesado",
-			terms: "Debes aceptar terminos y condiciones"
+			terms: ""
 		}
 	});
 
