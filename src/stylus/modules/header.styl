@@ -10,38 +10,39 @@
 		position relative
 		
 		.item-menu
-			border-bottom 4px solid $blanco
+			border-bottom 1px dotted $grisccc
 			color $gris
 			display block
 			float left
 			font-weight $light
-			font-size 1rem
+			font-size 0.8rem
+			position relative
 			padding 14px 16px
 			text-decoration none
-			width 100%
+			width 90%
 
 			&.cont-logo-psb
 				width 70px
-
-				&:hover
-					border-bottom 4px solid $blanco
+				border-bottom 0
 
 			&:hover,
 			&.active
-				border-bottom 4px solid $dorado
+				border-bottom 1px solid $dorado
 
 			&:not(:first-child)
 				display none
 				
 			&.icon-menu
+				border-bottom 0
 				display block
 				position absolute
 				right 0
 				width 30px
-
+			
+			&.cont-info-menu
 				&:hover
-					border-bottom 4px solid $blanco
-
+					border-bottom 1px solid $blanco
+			
 		&.responsive-menu
 			
 			.icon-menu
@@ -52,5 +53,4 @@
 			.item-menu
 				display block
 				float none
-		
 		
