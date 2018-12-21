@@ -1,0 +1,41 @@
+form#FormPSB.form-program
+    div.group-form
+        input#nombre.input-default(type="text", name="nombre", required)
+        label.label-default.fuscia(for="nombre")
+            |Nombre y Apellido
+    div.group-form
+        input.input-default(type="text", name="email", required)
+        label.label-default(for="email")
+            |Correo electrónico
+    div.group-form
+        input.input-default(type="text", name="numeroContacto", required)
+        label.label-default(for="numeroContacto")
+            |Número de contacto
+    div.group-form
+        select.select-default.arrow-select(name="ciudad")
+            option(value="0")
+                |Bogotá
+            option(value="1")
+                |Cali
+        label.label-default(for="")
+            |Ciudad
+    div.group-form
+        select.select-default.arrow-select(name="program")
+            option(value="Producción Gráfica", selected= titulo == 'produccion')
+                |Tecnología en Producción Gráfica para Medios Publicitarios
+            option(value="Realización Audiovisiual", selected= titulo == 'realizacion')
+                |Realización Audiovisiual
+            option(value="Gestión Comercial", selected= titulo == 'gestion')
+                |Gestión Comercial Internacional
+            option(value="Sistemas Informáticos", selected= titulo == 'sistemas')
+                |Sistemas Informáticos	
+    div.group-form
+        label.cont-check-terms
+            input.option-terms(type="radio", name="terms")
+            span.icon-checkmark(class="bg-"+color)
+            p.text-input-terms
+                |Acepto Política de Privacidad y las Condiciones de Uso.
+    
+    div.cont-btn-form
+        button.btn-default-landing(class="bg-"+color)
+            |Enviar

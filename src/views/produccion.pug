@@ -4,6 +4,7 @@ extends ../templates/base.pug
 //-Etiqueta Title
 block title
 	-var titulo = "produccion"
+	-var color = "fucsia"
 	title Programa | Producción Gráfica para Medios Publicitarios
 
 //-Etiqueta Metadescription
@@ -47,50 +48,9 @@ block content
 				
 				p.intro-form-program
 					|Conviértete en el experto que quieres ser
-				
-				form.form-program#FormPSB
-					div.group-form
-						input#nombre.input-default(type="text", name="nombre", required)
-						label.label-default(for="nombre")
-							|Nombre y Apellido
-					div.group-form
-						input#email.input-default(type="text", name="email", required)
-						label.label-default(for="email")
-							|Correo electrónico
-					div.group-form
-						input#numeroContacto.input-default(type="text", name="numerocontacto", required)
-						label.label-default(for="numerocontacto")
-							|Número de contacto
-					div.group-form
-						select#ciudad.select-default.arrow-select(name="ciudad")
-							option(value="", selected)
-								|Ciudad
-							option(value="0")
-								|Bogotá
-							option(value="1")
-								|Cali
-					div.group-form
-						select#programa.select-default.arrow-select(name="programa")
-							option(value="", selected)
-								|Programa de interes
-							option(value="0")
-								|Tecnología en Producción Gráfica para Medios Publicitarios
-							option(value="1")
-								|Realización Audiovisiual
-							option(value="2")
-								|Gestión Comercial Internacional
-							option(value="3")
-								|Sistemas Informáticos	
-					div.group-form
-						label.cont-check-terms
-							input.option-terms(type="radio", name="terms")
-							span.icon-checkmark(class="bg-"+color)
-							p.text-input-terms
-								|Acepto Política de Privacidad y las Condiciones de Uso.
-					
-					div.cont-btn-form
-						input.btn-default-landing(class="bg-"+color,type="submit",value="Enviar")
-							
+
+				include ../templates/partials/form.pug
+
 		//-Redes
 		article.cont-social-psb(class="bg-"+color)
 			div.cont-icon-social-facebook

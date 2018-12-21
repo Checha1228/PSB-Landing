@@ -4,6 +4,7 @@ extends ../templates/base.pug
 //-Etiqueta Title
 block title
 	-var titulo = "realizacion"
+	-var color = "rojo"
 	title Programa | Realización Audiovisiual
 
 //-Etiqueta Metadescription
@@ -47,48 +48,7 @@ block content
 				
 				p.intro-form-program
 					|Conviértete en el experto que quieres ser
-				
-				form.form-program(action="informacion")
-					div.group-form
-						input#nombre.input-default(type="text", name="nombre", required)
-						label.label-default.fuscia(for="nombre")
-							|Nombre y Apellido
-					div.group-form
-						input.input-default(type="text", name="email", required)
-						label.label-default(for="email")
-							|Correo electrónico
-					div.group-form
-						input.input-default(type="text", name="numerocontacto", required)
-						label.label-default(for="numerocontacto")
-							|Número de contacto
-					div.group-form
-						select.select-default.arrow-select(name="")
-							option(value="0")
-								|Bogotá
-							option(value="1")
-								|Cali
-						label.label-default(for="")
-							|Ciudad
-					div.group-form
-						select.select-default.arrow-select(name="")
-							option(value="0")
-								|Tecnología en Producción Gráfica para Medios Publicitarios
-							option(value="1" selected)
-								|Realización Audiovisiual
-							option(value="2")
-								|Gestión Comercial Internacional
-							option(value="3")
-								|Sistemas Informáticos		
-					div.group-form
-						label.cont-check-terms
-							input.option-terms(type="radio", name="terms")
-							span.icon-checkmark.bg-rojo
-							p.text-input-terms
-								|Acepto Política de Privacidad y las Condiciones de Uso.
-					
-					div.cont-btn-form
-						button.btn-default-landing.bg-rojo
-							|Enviar
+				include ../templates/partials/form.pug		
 		//-Redes
 		article.cont-social-psb.bg-rojo
 			div.cont-icon-social-facebook

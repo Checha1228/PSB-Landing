@@ -18,7 +18,7 @@
 <body>
   <!--Header-->
   <header class="cont-menu-psb">
-    <div class="menu-landing-psb" id="menu-psb-landing"><a class="item-menu cont-logo-psb" href="http://www.politecnicosantafedebogota.edu.co/portal/" target="_blank"><img class="img-responsive" src="images/Img-Logo-PSB.png" alt="Logo-PSB"></a><a class="item-menu" href="index.html">Producción Gráfica para Medios Publicitarios</a><a class="item-menu" href="realizaciona.html">Realización Audiovisiual</a><a class="item-menu active" href="gestionc.html">Gestión Comercial Internacional</a><a class="item-menu" href="sistemasi.html">Sistemas Informáticos</a><a class="item-menu icon-menu" href="javascript:void(0);" onclick="functionMenu()">
+    <div class="menu-landing-psb" id="menu-psb-landing"><a class="item-menu cont-logo-psb" href="http://www.politecnicosantafedebogota.edu.co/portal/" target="_blank"><img class="img-responsive" src="images/Img-Logo-PSB.png" alt="Logo-PSB"></a><a class="item-menu" href="produccion.html">Producción Gráfica para Medios Publicitarios</a><a class="item-menu" href="realizaciona.html">Realización Audiovisiual</a><a class="item-menu active" href="gestionc.html">Gestión Comercial Internacional</a><a class="item-menu" href="sistemasi.html">Sistemas Informáticos</a><a class="item-menu icon-menu" href="javascript:void(0);" onclick="functionMenu()">
         <div class="icon-hamburger"><i></i><i></i><i></i></div></a></div>
   </header>
   <!--/-Header-->
@@ -50,7 +50,7 @@
       <div class="cont-form-program">
         <h2 class="title-form-program amarillo">Inscríbete con el 30% de DESCUENTO</h2>
         <p class="intro-form-program">Conviértete en el experto que quieres ser</p>
-        <form class="form-program" action="informacion">
+        <form class="form-program" id="FormPSB">
           <div class="group-form">
             <input class="input-default" id="nombre" type="text" name="nombre" required>
             <label class="label-default fuscia" for="nombre">Nombre y Apellido</label>
@@ -60,22 +60,22 @@
             <label class="label-default" for="email">Correo electrónico</label>
           </div>
           <div class="group-form">
-            <input class="input-default" type="text" name="numerocontacto" required>
-            <label class="label-default" for="numerocontacto">Número de contacto</label>
+            <input class="input-default" type="text" name="numeroContacto" required>
+            <label class="label-default" for="numeroContacto">Número de contacto</label>
           </div>
           <div class="group-form">
-            <select class="select-default arrow-select" name="">
+            <select class="select-default arrow-select" name="ciudad">
               <option value="0">Bogotá</option>
               <option value="1">Cali</option>
             </select>
             <label class="label-default" for="">Ciudad</label>
           </div>
           <div class="group-form">
-            <select class="select-default arrow-select" name="">
-              <option value="0">Tecnología en Producción Gráfica para Medios Publicitarios</option>
-              <option value="1">Realización Audiovisiual</option>
-              <option value="2" selected>Gestión Comercial Internacional</option>
-              <option value="3">Sistemas Informáticos		</option>
+            <select class="select-default arrow-select" name="program">
+              <option value="Producción Gráfica">Tecnología en Producción Gráfica para Medios Publicitarios</option>
+              <option value="Realización Audiovisiual">Realización Audiovisiual</option>
+              <option value="Gestión Comercial" selected>Gestión Comercial Internacional</option>
+              <option value="Sistemas Informáticos">Sistemas Informáticos	</option>
             </select>
           </div>
           <div class="group-form">
@@ -241,6 +241,5 @@
   <script src="js/libs/jquery.js"></script>
   <script src="js/libs/jquery.validate.js"></script>
   <script src="js/libs/bootstrap.min.js"></script>
-  <script src="js/Formulario.js"></script>
-  <script src="js/test.js"></script>
+  <script src="js/psb.js"></script>
 </body></html>
