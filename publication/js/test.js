@@ -1,1 +1,25 @@
-"use strict";var demo="variable",fijo="const";demo=function(){for(var o=0;o<5;o++)console.log(o)},jQuery(document).ready(function(o){console.log("hola")});
+'use strict';
+
+//Keywords
+var demo = 'variable';
+var fijo = 'const';
+
+//arrow functions
+
+demo = function demo() {
+
+	for (var x = 0; x < 5; x++) {
+		console.log(x);
+	}
+};
+
+function functionMenu() {
+	var x = document.getElementById("menu-psb-landing");
+	if (x.className === "menu-landing-psb") {
+		x.className += " responsive-menu";
+	} else {
+		x.className = "menu-landing-psb";
+	}
+	$('.icon-hamburger').toggleClass('active');
+}
+//# sourceMappingURL=../maps/test.js.map

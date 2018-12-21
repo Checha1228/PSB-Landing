@@ -39,3 +39,13 @@ jQuery(document).ready(function($) {
 	});
 });
 
+function functionMenu() {
+	var x = document.getElementById("menu-psb-landing");
+	if (x.className === "menu-landing-psb") {
+	  x.className += " responsive-menu";
+	} else {
+	  x.className = "menu-landing-psb";
+	}
+	$('.icon-hamburger').toggleClass('active');
+}
+

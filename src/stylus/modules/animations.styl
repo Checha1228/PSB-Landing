@@ -14,3 +14,46 @@
   40%, 60% 
     transform: translate3d(4px, 0, 0)
   
+@keyframes inM 
+	0%
+		opacity 1
+	100%
+		opacity 0
+
+@keyframes outM 
+	50%
+		transform rotate(0)
+	100%
+		transform rotate(45deg)
+
+@keyframes inT 
+	0%
+		transform translateY(0px) rotate(0deg)
+	50%
+		transform translateY(9px) rotate(0deg)
+	100%
+		transform translateY(9px) rotate(135deg)
+
+@keyframes outT 
+	0%
+		transform translateY(0px) rotate(0deg)
+	50%
+		transform translateY(9px) rotate(0deg)
+	100%
+		transform translateY(9px) rotate(135deg)
+
+@keyframes inBtm 
+	0%
+		transform translateY(0px) rotate(0deg)
+	50%
+		transform translateY(-9px) rotate(0deg)
+	100%
+		transform translateY(-9px) rotate(-135deg)
+
+@keyframes outBtm 
+	0%
+		transform translateY(0px) rotate(0deg)
+	50%
+		transform translateY(-9px) rotate(0deg)
+	100%
+		transform translateY(-9px) rotate(-135deg)
