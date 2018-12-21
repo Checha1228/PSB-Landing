@@ -26,7 +26,7 @@ jQuery(document).ready(function($) {
 		e.preventDefault();
 		if($("#FormPSB").valid()){
 			$.ajax({
-				url: '',
+				url: 'guardar.php',
 				data: $("#FormPSB").serialize(),
 				success: function(data) {
 					jQuery('.cont-modal-form').fadeIn();
