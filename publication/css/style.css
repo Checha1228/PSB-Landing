@@ -4,7 +4,7 @@
  * @link 
  * @link Lady Castillo - ladycastdg@gmail.com
  * @license 
- *Thu Dec 20 2018 23:49:27 GMT-0500 (-05)
+ *Fri Dec 21 2018 00:02:39 GMT-0500 (-05)
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -192,15 +192,14 @@ svg {
 .cont-plan-program .plan-program-psb .detail-program .icon-detail-program,
 .cont-objetives-program .plan-program-psb .detail-program .icon-detail-program,
 .cont-info-payment .plan-program-psb .detail-program .icon-detail-program {
-  height: 74px;
   margin: 0 auto;
-  width: 26%;
+  width: 20%;
 }
 .cont-plan-program .plan-program-psb .detail-program .text-detail-program,
 .cont-objetives-program .plan-program-psb .detail-program .text-detail-program,
 .cont-info-payment .plan-program-psb .detail-program .text-detail-program {
   color: #666;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 300;
   margin: 20px auto 0;
 }
@@ -632,6 +631,21 @@ svg {
   background: #fff;
   color: #666;
 }
+.cont-btn-menu {
+  margin: 20px auto;
+  width: 72%;
+}
+.cont-btn-menu .btn-menu {
+  background-color: #34334f;
+  border: 0;
+  color: #eaeaea;
+  font-size: 0.8rem;
+  padding: 10px;
+}
+.text-info-menu {
+  text-align: center;
+  margin: 0;
+}
 .icon-arrow-btn {
   background-color: #e69902;
   color: #fff;
@@ -716,6 +730,19 @@ svg {
   -webkit-animation: inBtm 0.8s forwards;
   -moz-animation: inBtm 0.8s forwards;
   animation: inBtm 0.8s forwards;
+}
+.icon-arrow {
+  border: solid #34334f;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  position: absolute;
+  right: 20px;
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 .cont-all-landing-psb.formulario-header {
   position: relative;
@@ -834,37 +861,37 @@ svg {
   position: relative;
 }
 .cont-menu-psb .menu-landing-psb .item-menu {
-  border-bottom: 4px solid #fff;
+  border-bottom: 1px dotted #ccc;
   color: #393938;
   display: block;
   float: left;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.8rem;
+  position: relative;
   padding: 14px 16px;
   text-decoration: none;
-  width: 100%;
+  width: 90%;
 }
 .cont-menu-psb .menu-landing-psb .item-menu.cont-logo-psb {
   width: 70px;
-}
-.cont-menu-psb .menu-landing-psb .item-menu.cont-logo-psb:hover {
-  border-bottom: 4px solid #fff;
+  border-bottom: 0;
 }
 .cont-menu-psb .menu-landing-psb .item-menu:hover,
 .cont-menu-psb .menu-landing-psb .item-menu.active {
-  border-bottom: 4px solid #c99a4a;
+  border-bottom: 1px solid #c99a4a;
 }
 .cont-menu-psb .menu-landing-psb .item-menu:not(:first-child) {
   display: none;
 }
 .cont-menu-psb .menu-landing-psb .item-menu.icon-menu {
+  border-bottom: 0;
   display: block;
   position: absolute;
   right: 0;
   width: 30px;
 }
-.cont-menu-psb .menu-landing-psb .item-menu.icon-menu:hover {
-  border-bottom: 4px solid #fff;
+.cont-menu-psb .menu-landing-psb .item-menu.cont-info-menu:hover {
+  border-bottom: 1px solid #fff;
 }
 .cont-menu-psb .menu-landing-psb.responsive-menu .icon-menu,
 .cont-menu-psb .menu-landing-psb.responsive-menu position absolute {
@@ -1495,6 +1522,13 @@ svg {
   .cont-menu-psb .menu-landing-psb .item-menu.icon-menu {
     display: none;
   }
+  .cont-menu-psb .menu-landing-psb .item-menu.cont-info-menu {
+    display: none;
+  }
+  .cont-menu-psb .menu-landing-psb .item-menu:hover,
+  .cont-menu-psb .menu-landing-psb .item-menu.active {
+    border-bottom: 4px solid #c99a4a;
+  }
   .cont-menu-psb .menu-landing-psb.responsive-menu .item-menu {
     float: left;
     font-size: 0.9rem;
@@ -1507,10 +1541,16 @@ svg {
   .cont-menu-psb .menu-landing-psb.responsive-menu:not(:first-child) {
     display: block;
   }
+  .icon-arrow {
+    display: none;
+  }
   .cont-all-landing-psb .cont-modal-form .cont-info-modal {
     width: 30%;
   }
-  .cont-all-landing-psb.formulario-header-produccion {
+  .cont-all-landing-psb.formulario-header-produccion,
+  .cont-all-landing-psb.formulario-header-realizacion,
+  .cont-all-landing-psb.formulario-header-gestion,
+  .cont-all-landing-psb.formulario-header-sistema {
     padding-top: 184px;
   }
   .cont-all-landing-psb .cont-program-psb,
@@ -1541,13 +1581,15 @@ svg {
   }
   .cont-social-psb .title-name-social {
     display: block;
+    float: left;
     font-size: 0.8rem;
     font-weight: 300;
+    margin-left: 10px;
     text-align: center;
   }
   .cont-social-psb .cont-icon-social {
     float: left;
-    width: 20%;
+    width: 14%;
   }
   .cont-icon-social-facebook,
   .cont-icon-social-instagram,
@@ -1557,6 +1599,7 @@ svg {
   }
   .cont-plan-program .plan-program-psb .detail-program {
     margin: 0 20px;
+    width: 50%;
   }
   .cont-btn-plan {
     margin: 40px auto 20px;
