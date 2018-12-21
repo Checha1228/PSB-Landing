@@ -3,8 +3,8 @@ extends ../templates/base.pug
 
 //-Etiqueta Title
 block title
-	-var titulo = "produccion"
-	title Programa | Producción Gráfica para Medios Publicitarios
+	-var titulo = "sistemas"
+	title Programa | Sistemas Informáticos
 
 //-Etiqueta Metadescription
 block description
@@ -13,16 +13,16 @@ block description
 
 block content
 	//-Formulario
-	section.cont-all-landing-psb.formulario-header-produccion
+	section.cont-all-landing-psb.formulario-header-sistema
 		article.cont-program-psb
 			div.cont-intro-program-psb
 				div.cont-title-program
 					p.text-type-program
 						|Técnologia en
 					h1.title-program
-						|Producción Gráfica para Medios Publicitarios
+						|Sistemas Informáticos
 					p.text-resolution-program
-						|Resolución 11129  Septiembre 11 / 2012 SNIES 104265
+						|Resolución 5144 de 22 de Junio de 2011 SNIES 91372101338
 			
 				div.cont-list-program
 					ul.list-header-program
@@ -30,19 +30,15 @@ block content
 							i.icon-check.blanco
 								include ../templates/partials/icon-check.pug
 							p.text-list-program.blanco
-								|Fórmate como profesional integral en las nuevas técnicas gráficas  digitales e impresas que exige el mundo laboral actual.
+								|Asumir los retos de las nuevas tecnologías en diseño.
 						li.item-list-header
 							i.icon-check.blanco
 								include ../templates/partials/icon-check.pug
 							p.text-list-program.blanco
-								|Producción gráfica para medios publicitarios con desempeño laboral en los departamentos de arte o publiciadad: copy o redactor publicitario, diseñador, productor gráfico, community manager.
-						li.item-list-header
-							i.icon-check.blanco
-								include ../templates/partials/icon-check.pug
-							p.text-list-program.blanco
-								|Fórmate como profesional integral en las nuevas técnicas gráficas  digitales e impresas que exige el mundo laboral actual.
+								|Implementación de procesos en las diferentes empresas, en el área de informática, análisis de software, redes y telecomunicaciones.
+		
 			div.cont-form-program
-				h2.title-form-program(class=color)
+				h2.title-form-program.azul
 					|Inscríbete con el 30% de DESCUENTO
 				
 				p.intro-form-program
@@ -71,26 +67,26 @@ block content
 							|Ciudad
 					div.group-form
 						select.select-default.arrow-select(name="")
-							option(value="0" selected)
+							option(value="0")
 								|Tecnología en Producción Gráfica para Medios Publicitarios
 							option(value="1")
 								|Realización Audiovisiual
 							option(value="2")
 								|Gestión Comercial Internacional
-							option(value="3")
+							option(value="3" selected)
 								|Sistemas Informáticos	
 					div.group-form
 						label.cont-check-terms
 							input.option-terms(type="radio", name="terms")
-							span.icon-checkmark(class="bg-"+color)
+							span.icon-checkmark.bg-azul
 							p.text-input-terms
 								|Acepto Política de Privacidad y las Condiciones de Uso.
 					
 					div.cont-btn-form
-						button.btn-default-landing(class="bg-"+color)
+						button.btn-default-landing.bg-azul
 							|Enviar
 		//-Redes
-		article.cont-social-psb(class="bg-"+color)
+		article.cont-social-psb.bg-azul
 			div.cont-icon-social-facebook
 				a.blanco(href="https://api.whatsapp.com/send?phone=5717563499&text=Quiero%20m%C3%A1s%20informaci%C3%B3n")
 					div.cont-icon-social
@@ -130,94 +126,84 @@ block content
 		article.cont-plan-program
 			h3.title-plan-program
 				|¿Qué consigues 
-				span(class=color)
+				span.azul
 					|con psb?
 			div.plan-program-psb
 				div.detail-program
 					div.icon-detail-program
 						img.img-responsive(src="images/Img-Icon-PG-01.png", alt="")
 					p.text-detail-program
-						|Desenvuélvete en la planificación, ejecución y control de procesos creativos y técnicos. 
+						|Sé un profesional capaz de enfrentarte al panorama de competitividad como efecto de la internacionalización y globalización de la economía.
 				div.detail-program
 					div.icon-detail-program
 						img.img-responsive(src="images/Img-Icon-PG-02.png", alt="")
 					p.text-detail-program
-						|Adquiere un lenguaje abierto a los cambios, comprende las tendencias actuales.
-				div.detail-program
-					div.icon-detail-program
-						img.img-responsive(src="images/Img-Icon-PG-03.png", alt="")
-					p.text-detail-program
-						|Desenvuélvete en la planificación, ejecución y control de procesos creativos y técnicos. 
+						|Experto en desarrollo web, bases de datos, métodos de diseño, gestión de software y recursos, telecomunicaciones, desarrollo de sistemas sobre ambientes móviles.
 			
 			div.cont-btn-plan
-				button.btn-default-psb(class="bg-"+color)
+				button.btn-default-psb.bg-azul
 					|Plan de Estudios
 				i.icon-arrow-btn
 					|>
 	//-Objetivos
-	section.cont-all-landing-psb.objetives-section-produccion
+	section.cont-all-landing-psb.objetives-section-sistema
 		article.cont-objetives-program
 			h3.title-plan-program
 				|objetivos 
-				span(class=color)
+				span.azul
 					|del programa
 			div.cont-list-program
 				ul.list-header-program
 					li.item-list-header
 						i.icon-check
-							i.icon-check(class=color)
+							i.icon-check.azul
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
-							|Formar estrategas que desarrollen un estilo propio de producción gráfica, con creatividad  y proyección.
+							|Orientado a modelar, diseñar e implementar soluciones informáticas empresariales.
 					li.item-list-header
 						i.icon-check
-							i.icon-check(class=color)
+							i.icon-check.azul
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
-							|Sé un experto diseñador de identidad visual, multimedia, marcas, gestión de imagen corporativa, fotografía publicitaria, impresos, nuevas tecnologías.
+							|formar tecnólogos que entiendan y propongan soluciones informáticas de alta tecnología.
 					li.item-list-header
 						i.icon-check
-							i.icon-check(class=color)
+							i.icon-check.azul
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
-							|Ofrecer al egresado la experiencia y conocimiento necesario para que obtenga altas oportunidades de ocupación laboral.
-					li.item-list-header
-						i.icon-check
-							i.icon-check(class=color)
-								include ../templates/partials/icon-check.pug
-						p.text-list-program.gris
-							|Dar la posibilidad a nuestros estudiantes de proyectarse en corto tiempo hacía el mercado Publicitario.
+							|Proporcionar las bases teóricas y prácticas para ingresar al mundo laboral.
+					
 	//-General
 	section.cont-all-landing-psb
 		article.cont-info-payment
 			div.cont-detail-payment
 				div.detail-payment
-					i.icon-check(class=color)
+					i.icon-check.azul
 						include ../templates/partials/icon-check.pug
 					p.text-detail-payment
 						|CRÉDITO 
 						br
-						span(class=color)
+						span.azul
 							|DIRECTO
 				div.detail-payment
-					i.icon-check(class=color)
+					i.icon-check.azul
 						include ../templates/partials/icon-check.pug
 					p.text-detail-payment
 						|DESCUENTO 30%
 						br
-						span(class=color)
+						span.azul
 							|MATRÍCULA
 				div.detail-payment
-					i.icon-check(class=color)
+					i.icon-check.azul
 						include ../templates/partials/icon-check.pug
 					p.text-detail-payment
 						|HOMOLOGACIÓN 
 						br
-						span(class=color)
+						span.azul
 							|DE ESTUDIOS
 			
 			div.cont-btn-plan
-				button.btn-default-psb(class="bg-"+color)
+				button.btn-default-psb.bg-azul
 					|Quiero más información
 				i.icon-arrow-btn
 					|>

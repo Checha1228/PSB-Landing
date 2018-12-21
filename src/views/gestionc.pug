@@ -3,8 +3,8 @@ extends ../templates/base.pug
 
 //-Etiqueta Title
 block title
-	-var titulo = "produccion"
-	title Programa | Producción Gráfica para Medios Publicitarios
+	-var titulo = "gestion"
+	title Programa | Gestión Comercial Audiovisual
 
 //-Etiqueta Metadescription
 block description
@@ -13,16 +13,16 @@ block description
 
 block content
 	//-Formulario
-	section.cont-all-landing-psb.formulario-header-produccion
+	section.cont-all-landing-psb.formulario-header-gestion
 		article.cont-program-psb
 			div.cont-intro-program-psb
 				div.cont-title-program
 					p.text-type-program
 						|Técnologia en
 					h1.title-program
-						|Producción Gráfica para Medios Publicitarios
+						|Gestión Comercial Internacional
 					p.text-resolution-program
-						|Resolución 11129  Septiembre 11 / 2012 SNIES 104265
+						|Resolución 10591 de 22 de Noviembre de 2011 SNIES 101338
 			
 				div.cont-list-program
 					ul.list-header-program
@@ -30,19 +30,14 @@ block content
 							i.icon-check.blanco
 								include ../templates/partials/icon-check.pug
 							p.text-list-program.blanco
-								|Fórmate como profesional integral en las nuevas técnicas gráficas  digitales e impresas que exige el mundo laboral actual.
+								|Amplio perfil profesional como ejecutivo de empresas importadoras y exportadoras.
 						li.item-list-header
 							i.icon-check.blanco
 								include ../templates/partials/icon-check.pug
 							p.text-list-program.blanco
-								|Producción gráfica para medios publicitarios con desempeño laboral en los departamentos de arte o publiciadad: copy o redactor publicitario, diseñador, productor gráfico, community manager.
-						li.item-list-header
-							i.icon-check.blanco
-								include ../templates/partials/icon-check.pug
-							p.text-list-program.blanco
-								|Fórmate como profesional integral en las nuevas técnicas gráficas  digitales e impresas que exige el mundo laboral actual.
+								|Alta oferta laboral en: operaión logística, analista de negocios, finanzas, mercados y operaciones comerciales internacionales, empleado o asesor en operaciones DFI, transporte de carga internacional, pagos, divisas, contratación de servicios para el comercio internacional e investigación de mercados.
 			div.cont-form-program
-				h2.title-form-program(class=color)
+				h2.title-form-program.amarillo
 					|Inscríbete con el 30% de DESCUENTO
 				
 				p.intro-form-program
@@ -71,26 +66,26 @@ block content
 							|Ciudad
 					div.group-form
 						select.select-default.arrow-select(name="")
-							option(value="0" selected)
+							option(value="0")
 								|Tecnología en Producción Gráfica para Medios Publicitarios
 							option(value="1")
 								|Realización Audiovisiual
-							option(value="2")
+							option(value="2" selected)
 								|Gestión Comercial Internacional
 							option(value="3")
-								|Sistemas Informáticos	
+								|Sistemas Informáticos		
 					div.group-form
 						label.cont-check-terms
 							input.option-terms(type="radio", name="terms")
-							span.icon-checkmark(class="bg-"+color)
+							span.icon-checkmark.bg-amarillo
 							p.text-input-terms
 								|Acepto Política de Privacidad y las Condiciones de Uso.
 					
 					div.cont-btn-form
-						button.btn-default-landing(class="bg-"+color)
+						button.btn-default-landing.bg-amarillo
 							|Enviar
 		//-Redes
-		article.cont-social-psb(class="bg-"+color)
+		article.cont-social-psb.bg-amarillo
 			div.cont-icon-social-facebook
 				a.blanco(href="https://api.whatsapp.com/send?phone=5717563499&text=Quiero%20m%C3%A1s%20informaci%C3%B3n")
 					div.cont-icon-social
@@ -130,94 +125,88 @@ block content
 		article.cont-plan-program
 			h3.title-plan-program
 				|¿Qué consigues 
-				span(class=color)
+				span.amarillo
 					|con psb?
 			div.plan-program-psb
 				div.detail-program
 					div.icon-detail-program
 						img.img-responsive(src="images/Img-Icon-PG-01.png", alt="")
 					p.text-detail-program
-						|Desenvuélvete en la planificación, ejecución y control de procesos creativos y técnicos. 
+						|Cumple tus metas con nuestras facilidades de pago y convenios. 
 				div.detail-program
 					div.icon-detail-program
 						img.img-responsive(src="images/Img-Icon-PG-02.png", alt="")
 					p.text-detail-program
-						|Adquiere un lenguaje abierto a los cambios, comprende las tendencias actuales.
+						|Prepárate con los docentes más capacitados para darte las herramientas que necesitas en en mundo laboral.
 				div.detail-program
 					div.icon-detail-program
 						img.img-responsive(src="images/Img-Icon-PG-03.png", alt="")
 					p.text-detail-program
-						|Desenvuélvete en la planificación, ejecución y control de procesos creativos y técnicos. 
+						|En PSB nuestros estudiantes están a la vanguardia de los diferentes procesos que se necesitan el la vida laboral. 
 			
 			div.cont-btn-plan
-				button.btn-default-psb(class="bg-"+color)
+				button.btn-default-psb.bg-amarillo
 					|Plan de Estudios
 				i.icon-arrow-btn
 					|>
 	//-Objetivos
-	section.cont-all-landing-psb.objetives-section-produccion
+	section.cont-all-landing-psb.objetives-section-gestion
 		article.cont-objetives-program
 			h3.title-plan-program
 				|objetivos 
-				span(class=color)
+				span.amarillo
 					|del programa
 			div.cont-list-program
 				ul.list-header-program
 					li.item-list-header
 						i.icon-check
-							i.icon-check(class=color)
+							i.icon-check.amarillo
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
-							|Formar estrategas que desarrollen un estilo propio de producción gráfica, con creatividad  y proyección.
+							|Orientado a modelar, diseñar e implementar soluciones informáticas empresariales.
 					li.item-list-header
 						i.icon-check
-							i.icon-check(class=color)
+							i.icon-check.amarillo
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
-							|Sé un experto diseñador de identidad visual, multimedia, marcas, gestión de imagen corporativa, fotografía publicitaria, impresos, nuevas tecnologías.
+							|formar tecnólogos que entiendan y propongan soluciones informáticas de alta tecnología.
 					li.item-list-header
 						i.icon-check
-							i.icon-check(class=color)
+							i.icon-check.amarillo
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
-							|Ofrecer al egresado la experiencia y conocimiento necesario para que obtenga altas oportunidades de ocupación laboral.
-					li.item-list-header
-						i.icon-check
-							i.icon-check(class=color)
-								include ../templates/partials/icon-check.pug
-						p.text-list-program.gris
-							|Dar la posibilidad a nuestros estudiantes de proyectarse en corto tiempo hacía el mercado Publicitario.
+							|Proporcionar las bases teóricas y prácticas para ingresar al mundo laboral.
 	//-General
 	section.cont-all-landing-psb
 		article.cont-info-payment
 			div.cont-detail-payment
 				div.detail-payment
-					i.icon-check(class=color)
+					i.icon-check.amarillo
 						include ../templates/partials/icon-check.pug
 					p.text-detail-payment
 						|CRÉDITO 
 						br
-						span(class=color)
+						span.amarillo
 							|DIRECTO
 				div.detail-payment
-					i.icon-check(class=color)
+					i.icon-check.amarillo
 						include ../templates/partials/icon-check.pug
 					p.text-detail-payment
 						|DESCUENTO 30%
 						br
-						span(class=color)
+						span.amarillo
 							|MATRÍCULA
 				div.detail-payment
-					i.icon-check(class=color)
+					i.icon-check.amarillo
 						include ../templates/partials/icon-check.pug
 					p.text-detail-payment
 						|HOMOLOGACIÓN 
 						br
-						span(class=color)
+						span.amarillo
 							|DE ESTUDIOS
 			
 			div.cont-btn-plan
-				button.btn-default-psb(class="bg-"+color)
+				button.btn-default-psb.bg-amarillo
 					|Quiero más información
 				i.icon-arrow-btn
 					|>

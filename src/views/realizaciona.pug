@@ -3,8 +3,8 @@ extends ../templates/base.pug
 
 //-Etiqueta Title
 block title
-	-var titulo = "produccion"
-	title Programa | Producción Gráfica para Medios Publicitarios
+	-var titulo = "realizacion"
+	title Programa | Realización Audiovisiual
 
 //-Etiqueta Metadescription
 block description
@@ -13,16 +13,16 @@ block description
 
 block content
 	//-Formulario
-	section.cont-all-landing-psb.formulario-header-produccion
+	section.cont-all-landing-psb.formulario-header-realizacion
 		article.cont-program-psb
 			div.cont-intro-program-psb
 				div.cont-title-program
 					p.text-type-program
 						|Técnologia en
 					h1.title-program
-						|Producción Gráfica para Medios Publicitarios
+						|Realización Audiovisiual
 					p.text-resolution-program
-						|Resolución 11129  Septiembre 11 / 2012 SNIES 104265
+						|Resolución 3617 de 12 de Abril de 2012 SNIES 101630
 			
 				div.cont-list-program
 					ul.list-header-program
@@ -30,19 +30,19 @@ block content
 							i.icon-check.blanco
 								include ../templates/partials/icon-check.pug
 							p.text-list-program.blanco
-								|Fórmate como profesional integral en las nuevas técnicas gráficas  digitales e impresas que exige el mundo laboral actual.
+								|Aporte de manera creativa al desarrollo de los distintos canales audiovisuales.
 						li.item-list-header
 							i.icon-check.blanco
 								include ../templates/partials/icon-check.pug
 							p.text-list-program.blanco
-								|Producción gráfica para medios publicitarios con desempeño laboral en los departamentos de arte o publiciadad: copy o redactor publicitario, diseñador, productor gráfico, community manager.
+								|Base teórica - práctica para brindar al estudiante los   elementos necesarios para desenvolverse en el mundo profesional. 
 						li.item-list-header
 							i.icon-check.blanco
 								include ../templates/partials/icon-check.pug
 							p.text-list-program.blanco
-								|Fórmate como profesional integral en las nuevas técnicas gráficas  digitales e impresas que exige el mundo laboral actual.
+								|Excelentes fundamentos audiovisuales que permiten al egresado proponer contenidos modernos para la producción y consumo del mercado actual.
 			div.cont-form-program
-				h2.title-form-program(class=color)
+				h2.title-form-program.rojo
 					|Inscríbete con el 30% de DESCUENTO
 				
 				p.intro-form-program
@@ -71,26 +71,26 @@ block content
 							|Ciudad
 					div.group-form
 						select.select-default.arrow-select(name="")
-							option(value="0" selected)
+							option(value="0")
 								|Tecnología en Producción Gráfica para Medios Publicitarios
-							option(value="1")
+							option(value="1" selected)
 								|Realización Audiovisiual
 							option(value="2")
 								|Gestión Comercial Internacional
 							option(value="3")
-								|Sistemas Informáticos	
+								|Sistemas Informáticos		
 					div.group-form
 						label.cont-check-terms
 							input.option-terms(type="radio", name="terms")
-							span.icon-checkmark(class="bg-"+color)
+							span.icon-checkmark.bg-rojo
 							p.text-input-terms
 								|Acepto Política de Privacidad y las Condiciones de Uso.
 					
 					div.cont-btn-form
-						button.btn-default-landing(class="bg-"+color)
+						button.btn-default-landing.bg-rojo
 							|Enviar
 		//-Redes
-		article.cont-social-psb(class="bg-"+color)
+		article.cont-social-psb.bg-rojo
 			div.cont-icon-social-facebook
 				a.blanco(href="https://api.whatsapp.com/send?phone=5717563499&text=Quiero%20m%C3%A1s%20informaci%C3%B3n")
 					div.cont-icon-social
@@ -130,60 +130,60 @@ block content
 		article.cont-plan-program
 			h3.title-plan-program
 				|¿Qué consigues 
-				span(class=color)
+				span.rojo
 					|con psb?
 			div.plan-program-psb
 				div.detail-program
 					div.icon-detail-program
 						img.img-responsive(src="images/Img-Icon-PG-01.png", alt="")
 					p.text-detail-program
-						|Desenvuélvete en la planificación, ejecución y control de procesos creativos y técnicos. 
+						|Sé un profesional integral, en la capacidad de acercarse de manera creativa al desarrollo de los distintos géneros de la televisión y nuevas plataformas.
 				div.detail-program
 					div.icon-detail-program
 						img.img-responsive(src="images/Img-Icon-PG-02.png", alt="")
 					p.text-detail-program
-						|Adquiere un lenguaje abierto a los cambios, comprende las tendencias actuales.
+						|Sé un experto en realización y programación en televisión y nuevas plataformas tecnológicas.
 				div.detail-program
 					div.icon-detail-program
 						img.img-responsive(src="images/Img-Icon-PG-03.png", alt="")
 					p.text-detail-program
-						|Desenvuélvete en la planificación, ejecución y control de procesos creativos y técnicos. 
+						|Prepárate para ser un experto en producción y postproducción, con base teórica - práctica para el mundo laboral. 
 			
 			div.cont-btn-plan
-				button.btn-default-psb(class="bg-"+color)
+				button.btn-default-psb.bg-rojo
 					|Plan de Estudios
 				i.icon-arrow-btn
 					|>
 	//-Objetivos
-	section.cont-all-landing-psb.objetives-section-produccion
+	section.cont-all-landing-psb.objetives-section-realizacion
 		article.cont-objetives-program
 			h3.title-plan-program
 				|objetivos 
-				span(class=color)
+				span.rojo
 					|del programa
 			div.cont-list-program
 				ul.list-header-program
 					li.item-list-header
 						i.icon-check
-							i.icon-check(class=color)
+							i.icon-check.rojo
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
-							|Formar estrategas que desarrollen un estilo propio de producción gráfica, con creatividad  y proyección.
+							|Ser un profesional experto en el desarrollo y producción de contenido para todos los géneros existentes, para prepararse al rápido cambio de la tecnología.
 					li.item-list-header
 						i.icon-check
-							i.icon-check(class=color)
+							i.icon-check.rojo
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
-							|Sé un experto diseñador de identidad visual, multimedia, marcas, gestión de imagen corporativa, fotografía publicitaria, impresos, nuevas tecnologías.
+							|Ofrecer la capacitación y experiencia necesaria en el ámbito audiovisual para formar profesionales competentes para un mundo laboral exigente.
 					li.item-list-header
 						i.icon-check
-							i.icon-check(class=color)
+							i.icon-check.rojo
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
-							|Ofrecer al egresado la experiencia y conocimiento necesario para que obtenga altas oportunidades de ocupación laboral.
+							|Otorgar fuertes fundamentos audiovisuales y estéticos, con las habilidades necesarias para los mercados emergentes.
 					li.item-list-header
 						i.icon-check
-							i.icon-check(class=color)
+							i.icon-check.rojo
 								include ../templates/partials/icon-check.pug
 						p.text-list-program.gris
 							|Dar la posibilidad a nuestros estudiantes de proyectarse en corto tiempo hacía el mercado Publicitario.
@@ -192,32 +192,32 @@ block content
 		article.cont-info-payment
 			div.cont-detail-payment
 				div.detail-payment
-					i.icon-check(class=color)
+					i.icon-check.rojo
 						include ../templates/partials/icon-check.pug
 					p.text-detail-payment
 						|CRÉDITO 
 						br
-						span(class=color)
+						span.rojo
 							|DIRECTO
 				div.detail-payment
-					i.icon-check(class=color)
+					i.icon-check.rojo
 						include ../templates/partials/icon-check.pug
 					p.text-detail-payment
 						|DESCUENTO 30%
 						br
-						span(class=color)
+						span.rojo
 							|MATRÍCULA
 				div.detail-payment
-					i.icon-check(class=color)
+					i.icon-check.rojo
 						include ../templates/partials/icon-check.pug
 					p.text-detail-payment
 						|HOMOLOGACIÓN 
 						br
-						span(class=color)
+						span.rojo
 							|DE ESTUDIOS
 			
 			div.cont-btn-plan
-				button.btn-default-psb(class="bg-"+color)
+				button.btn-default-psb.bg-rojo
 					|Quiero más información
 				i.icon-arrow-btn
 					|>

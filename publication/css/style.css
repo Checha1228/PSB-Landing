@@ -4,7 +4,7 @@
  * @link 
  * @link Lady Castillo - ladycastdg@gmail.com
  * @license 
- *Thu Dec 20 2018 20:05:19 GMT-0500 (-05)
+ *Thu Dec 20 2018 21:15:19 GMT-0500 (-05)
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -63,18 +63,51 @@ svg {
   color: #393938;
 }
 .cont-all-landing-psb {
-  width: 100%;
-}
-.cont-all-landing-psb.formulario-header {
-  background-image: url("../images/Img-Banner-PGraficaM.png");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
+  width: 100%;
+}
+.cont-all-landing-psb.formulario-header-produccion {
+  background-image: url("../images/Img-Banner-PGraficaM.png");
   padding-top: 116px;
 }
-.cont-all-landing-psb.objetives-section {
+.cont-all-landing-psb.objetives-section-produccion {
   background-image: url("../images/Img-Banner-PGrafica.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.cont-all-landing-psb.formulario-header-realizacion {
+  background-image: url("../images/Img-Banner-RAudiovisualM.png");
+  padding-top: 116px;
+}
+.cont-all-landing-psb.objetives-section-realizacion {
+  background-image: url("../images/Img-Banner-RAudiovisual.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.cont-all-landing-psb.formulario-header-gestion {
+  background-image: url("../images/Img-Banner-GComercialM.png");
+  padding-top: 116px;
+}
+.cont-all-landing-psb.objetives-section-gestion {
+  background-image: url("../images/Img-Banner-GComercial.jpg");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+.cont-all-landing-psb.formulario-header-sistema {
+  background-image: url("../images/Img-Banner-SInformaticosM.png");
+  padding-top: 116px;
+}
+.cont-all-landing-psb.objetives-section-sistema {
+  background-image: url("../images/Img-Banner-SInformaticos.jpg");
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -170,7 +203,6 @@ svg {
   font-size: 1.1rem;
   font-weight: 300;
   margin: 20px auto 0;
-  text-align: justify;
 }
 .title-plan-program {
   font-size: 1.6rem;
@@ -292,7 +324,6 @@ svg {
   font-size: 1rem;
   font-weight: 300;
   margin: 0;
-  text-align: justify;
   width: 90%;
 }
 .cont-social-psb .title-name-social {
@@ -333,7 +364,7 @@ svg {
   -webkit-flex-direction: row;
   flex-direction: row;
   margin: 0 auto 40px;
-  width: 66%;
+  width: 80%;
 }
 .detail-payment .icon-check {
   margin-right: 20px;
@@ -763,6 +794,7 @@ svg {
   color: #c99a4a;
   font-size: 0.6rem;
   margin: 0;
+  text-align: center;
 }
 .cont-menu-psb {
   -webkit-box-shadow: 0px 2px 0px 1px #666;
@@ -1333,7 +1365,7 @@ svg {
   .cont-all-landing-psb .cont-modal-form .cont-info-modal {
     width: 30%;
   }
-  .cont-all-landing-psb.formulario-header {
+  .cont-all-landing-psb.formulario-header-produccion {
     padding-top: 184px;
   }
   .cont-all-landing-psb .cont-program-psb,
