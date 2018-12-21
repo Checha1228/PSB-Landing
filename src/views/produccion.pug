@@ -1,0 +1,230 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	-var titulo = "produccion"
+	title Programa | Producción Gráfica para Medios Publicitarios
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="Programas Politécnico Santafé de Bogotá" )
+
+
+block content
+	//-Formulario
+	section.cont-all-landing-psb.formulario-header-produccion
+		article.cont-program-psb
+			div.cont-intro-program-psb
+				div.cont-title-program
+					p.text-type-program
+						|Técnologia en
+					h1.title-program
+						|Producción Gráfica para Medios Publicitarios
+					p.text-resolution-program
+						|Resolución 11129  Septiembre 11 / 2012 SNIES 104265
+			
+				div.cont-list-program
+					ul.list-header-program
+						li.item-list-header
+							i.icon-check.blanco
+								include ../templates/partials/icon-check.pug
+							p.text-list-program.blanco
+								|Fórmate como profesional integral en las nuevas técnicas gráficas  digitales e impresas que exige el mundo laboral actual.
+						li.item-list-header
+							i.icon-check.blanco
+								include ../templates/partials/icon-check.pug
+							p.text-list-program.blanco
+								|Producción gráfica para medios publicitarios con desempeño laboral en los departamentos de arte o publiciadad: copy o redactor publicitario, diseñador, productor gráfico, community manager.
+						li.item-list-header
+							i.icon-check.blanco
+								include ../templates/partials/icon-check.pug
+							p.text-list-program.blanco
+								|Fórmate como profesional integral en las nuevas técnicas gráficas  digitales e impresas que exige el mundo laboral actual.
+			div.cont-form-program
+				h2.title-form-program(class=color)
+					|Inscríbete con el 30% de DESCUENTO
+				
+				p.intro-form-program
+					|Conviértete en el experto que quieres ser
+				
+				form.form-program#FormPSB
+					div.group-form
+						input#nombre.input-default(type="text", name="nombre", required)
+						label.label-default(for="nombre")
+							|Nombre y Apellido
+					div.group-form
+						input#email.input-default(type="text", name="email", required)
+						label.label-default(for="email")
+							|Correo electrónico
+					div.group-form
+						input#numeroContacto.input-default(type="text", name="numerocontacto", required)
+						label.label-default(for="numerocontacto")
+							|Número de contacto
+					div.group-form
+						select#ciudad.select-default.arrow-select(name="ciudad")
+							option(value="", selected)
+								|Ciudad
+							option(value="0")
+								|Bogotá
+							option(value="1")
+								|Cali
+					div.group-form
+						select#programa.select-default.arrow-select(name="programa")
+							option(value="", selected)
+								|Programa de interes
+							option(value="0")
+								|Tecnología en Producción Gráfica para Medios Publicitarios
+							option(value="1")
+								|Realización Audiovisiual
+							option(value="2")
+								|Gestión Comercial Internacional
+							option(value="3")
+								|Sistemas Informáticos	
+					div.group-form
+						label.cont-check-terms
+							input.option-terms(type="radio", name="terms")
+							span.icon-checkmark(class="bg-"+color)
+							p.text-input-terms
+								|Acepto Política de Privacidad y las Condiciones de Uso.
+					
+					div.cont-btn-form
+						input.btn-default-landing(class="bg-"+color,type="submit",value="Enviar")
+							
+		//-Redes
+		article.cont-social-psb(class="bg-"+color)
+			div.cont-icon-social-facebook
+				a.blanco(href="https://api.whatsapp.com/send?phone=5717563499&text=Quiero%20m%C3%A1s%20informaci%C3%B3n")
+					div.cont-icon-social
+						include ../templates/partials/icon-whatsapp.pug
+					p.title-name-social
+						| Politécnico Santafé de Bogotá
+			div.cont-icon-social-instagram
+				a.blanco(href="https://www.instagram.com/politecnicosantafebogota/")
+					div.cont-icon-social
+						include ../templates/partials/icon-instagram.pug
+					p.title-name-social
+						| @politecnicosantafebogota
+			div.cont-icon-social-linkedin
+				a.blanco(href="https://www.facebook.com/politecnicopsb?_rdc=1&_rdr")
+					div.cont-icon-social
+						include ../templates/partials/icon-facebook.pug
+					p.title-name-social
+						| Politécnico Santafé de Bogotá
+		//-Modal
+		div.cont-modal-form(style="display:none;")
+			div.cont-info-modal
+				div.cont-icon-modal
+					img.img-responsive(src="images/headphone.svg", alt="")
+				
+				div.cont-text-modal
+					h3.title-modal
+						|Tu formulario se ha enviado correctamente
+					
+					p.text-modal
+						|Gracias por confiar en nosotros, uno de nuestros asesores se comunicará pronto.
+				
+					div.cont-btn-form
+						button#Aceptar.btn-default-landing
+							|Aceptar
+	//-Que
+	section.cont-all-landing-psb
+		article.cont-plan-program
+			h3.title-plan-program
+				|¿Qué consigues 
+				span(class=color)
+					|con psb?
+			div.plan-program-psb
+				div.detail-program
+					div.icon-detail-program
+						img.img-responsive(src="images/Img-Icon-PG-01.png", alt="")
+					p.text-detail-program
+						|Desenvuélvete en la planificación, ejecución y control de procesos creativos y técnicos. 
+				div.detail-program
+					div.icon-detail-program
+						img.img-responsive(src="images/Img-Icon-PG-02.png", alt="")
+					p.text-detail-program
+						|Adquiere un lenguaje abierto a los cambios, comprende las tendencias actuales.
+				div.detail-program
+					div.icon-detail-program
+						img.img-responsive(src="images/Img-Icon-PG-03.png", alt="")
+					p.text-detail-program
+						|Desenvuélvete en la planificación, ejecución y control de procesos creativos y técnicos. 
+			
+			div.cont-btn-plan
+				button.btn-default-psb(class="bg-"+color)
+					|Plan de Estudios
+				i.icon-arrow-btn
+					|>
+	//-Objetivos
+	section.cont-all-landing-psb.objetives-section-produccion
+		article.cont-objetives-program
+			h3.title-plan-program
+				|objetivos 
+				span(class=color)
+					|del programa
+			div.cont-list-program
+				ul.list-header-program
+					li.item-list-header
+						i.icon-check
+							i.icon-check(class=color)
+								include ../templates/partials/icon-check.pug
+						p.text-list-program.gris
+							|Formar estrategas que desarrollen un estilo propio de producción gráfica, con creatividad  y proyección.
+					li.item-list-header
+						i.icon-check
+							i.icon-check(class=color)
+								include ../templates/partials/icon-check.pug
+						p.text-list-program.gris
+							|Sé un experto diseñador de identidad visual, multimedia, marcas, gestión de imagen corporativa, fotografía publicitaria, impresos, nuevas tecnologías.
+					li.item-list-header
+						i.icon-check
+							i.icon-check(class=color)
+								include ../templates/partials/icon-check.pug
+						p.text-list-program.gris
+							|Ofrecer al egresado la experiencia y conocimiento necesario para que obtenga altas oportunidades de ocupación laboral.
+					li.item-list-header
+						i.icon-check
+							i.icon-check(class=color)
+								include ../templates/partials/icon-check.pug
+						p.text-list-program.gris
+							|Dar la posibilidad a nuestros estudiantes de proyectarse en corto tiempo hacía el mercado Publicitario.
+	//-General
+	section.cont-all-landing-psb
+		article.cont-info-payment
+			div.cont-detail-payment
+				div.detail-payment
+					i.icon-check(class=color)
+						include ../templates/partials/icon-check.pug
+					p.text-detail-payment
+						|CRÉDITO 
+						br
+						span(class=color)
+							|DIRECTO
+				div.detail-payment
+					i.icon-check(class=color)
+						include ../templates/partials/icon-check.pug
+					p.text-detail-payment
+						|DESCUENTO 30%
+						br
+						span(class=color)
+							|MATRÍCULA
+				div.detail-payment
+					i.icon-check(class=color)
+						include ../templates/partials/icon-check.pug
+					p.text-detail-payment
+						|HOMOLOGACIÓN 
+						br
+						span(class=color)
+							|DE ESTUDIOS
+			
+			div.cont-btn-plan
+				button.btn-default-psb(class="bg-"+color)
+					|Quiero más información
+				i.icon-arrow-btn
+					|>
+			
+			
+block Scripts
+	//-Acá se ponen js que solo vayan en ésta página
+

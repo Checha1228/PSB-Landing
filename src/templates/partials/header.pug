@@ -3,16 +3,16 @@ header.cont-menu-psb
 	div#menu-psb-landing.menu-landing-psb
 		a.item-menu.cont-logo-psb(href="http://www.politecnicosantafedebogota.edu.co/portal/", target="_blank")
 			img.img-responsive(src="images/Img-Logo-PSB.png", alt="Logo-PSB")
-		a.item-menu.active(href="realizaciona.html")
+		a.item-menu(href="index.html", class={active: titulo === "produccion"})
 			|Producción Gráfica para Medios Publicitarios
 		
-		a.item-menu(href="realizaciona.html")
+		a.item-menu(href="realizaciona.html", class={active: titulo === "realizacion"})
 			|Realización Audiovisiual
 
-		a.item-menu(href="realizaciona.html")
+		a.item-menu(href="gestionc.html", class={active: titulo === "gestion"})
 			|Gestión Comercial Internacional
 		
-		a.item-menu(href="realizaciona.html")
+		a.item-menu(href="sistemasi.html", class={active: titulo === "sistemas"})
 			|Sistemas Informáticos
 		a.item-menu.icon-menu(href="javascript:void(0);", onclick="functionMenu()")
 			div.icon-hamburger

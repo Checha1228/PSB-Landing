@@ -1,0 +1,228 @@
+//-Layout Base
+extends ../templates/base.pug
+
+//-Etiqueta Title
+block title
+	-var titulo = "realizacion"
+	title Programa | Realización Audiovisiual
+
+//-Etiqueta Metadescription
+block description
+	meta(name="description", content="Programas Politécnico Santafé de Bogotá" )
+
+
+block content
+	//-Formulario
+	section.cont-all-landing-psb.formulario-header-realizacion
+		article.cont-program-psb
+			div.cont-intro-program-psb
+				div.cont-title-program
+					p.text-type-program
+						|Técnologia en
+					h1.title-program
+						|Realización Audiovisiual
+					p.text-resolution-program
+						|Resolución 3617 de 12 de Abril de 2012 SNIES 101630
+			
+				div.cont-list-program
+					ul.list-header-program
+						li.item-list-header
+							i.icon-check.blanco
+								include ../templates/partials/icon-check.pug
+							p.text-list-program.blanco
+								|Aporte de manera creativa al desarrollo de los distintos canales audiovisuales.
+						li.item-list-header
+							i.icon-check.blanco
+								include ../templates/partials/icon-check.pug
+							p.text-list-program.blanco
+								|Base teórica - práctica para brindar al estudiante los   elementos necesarios para desenvolverse en el mundo profesional. 
+						li.item-list-header
+							i.icon-check.blanco
+								include ../templates/partials/icon-check.pug
+							p.text-list-program.blanco
+								|Excelentes fundamentos audiovisuales que permiten al egresado proponer contenidos modernos para la producción y consumo del mercado actual.
+			div.cont-form-program
+				h2.title-form-program.rojo
+					|Inscríbete con el 30% de DESCUENTO
+				
+				p.intro-form-program
+					|Conviértete en el experto que quieres ser
+				
+				form.form-program(action="informacion")
+					div.group-form
+						input#nombre.input-default(type="text", name="nombre", required)
+						label.label-default.fuscia(for="nombre")
+							|Nombre y Apellido
+					div.group-form
+						input.input-default(type="text", name="email", required)
+						label.label-default(for="email")
+							|Correo electrónico
+					div.group-form
+						input.input-default(type="text", name="numerocontacto", required)
+						label.label-default(for="numerocontacto")
+							|Número de contacto
+					div.group-form
+						select.select-default.arrow-select(name="")
+							option(value="0")
+								|Bogotá
+							option(value="1")
+								|Cali
+						label.label-default(for="")
+							|Ciudad
+					div.group-form
+						select.select-default.arrow-select(name="")
+							option(value="0")
+								|Tecnología en Producción Gráfica para Medios Publicitarios
+							option(value="1" selected)
+								|Realización Audiovisiual
+							option(value="2")
+								|Gestión Comercial Internacional
+							option(value="3")
+								|Sistemas Informáticos		
+					div.group-form
+						label.cont-check-terms
+							input.option-terms(type="radio", name="terms")
+							span.icon-checkmark.bg-rojo
+							p.text-input-terms
+								|Acepto Política de Privacidad y las Condiciones de Uso.
+					
+					div.cont-btn-form
+						button.btn-default-landing.bg-rojo
+							|Enviar
+		//-Redes
+		article.cont-social-psb.bg-rojo
+			div.cont-icon-social-facebook
+				a.blanco(href="https://api.whatsapp.com/send?phone=5717563499&text=Quiero%20m%C3%A1s%20informaci%C3%B3n")
+					div.cont-icon-social
+						include ../templates/partials/icon-whatsapp.pug
+					p.title-name-social
+						| Politécnico Santafé de Bogotá
+			div.cont-icon-social-instagram
+				a.blanco(href="https://www.instagram.com/politecnicosantafebogota/")
+					div.cont-icon-social
+						include ../templates/partials/icon-instagram.pug
+					p.title-name-social
+						| @politecnicosantafebogota
+			div.cont-icon-social-linkedin
+				a.blanco(href="https://www.facebook.com/politecnicopsb?_rdc=1&_rdr")
+					div.cont-icon-social
+						include ../templates/partials/icon-facebook.pug
+					p.title-name-social
+						| Politécnico Santafé de Bogotá
+		//-Modal
+		div.cont-modal-form(style="display:none;")
+			div.cont-info-modal
+				div.cont-icon-modal
+					img.img-responsive(src="images/headphone.svg", alt="")
+				
+				div.cont-text-modal
+					h3.title-modal
+						|Tu formulario se ha enviado correctamente
+					
+					p.text-modal
+						|Gracias por confiar en nosotros, uno de nuestros asesores se comunicará pronto.
+				
+					div.cont-btn-form
+						button.btn-default-landing
+							|Aceptar
+	//-Que
+	section.cont-all-landing-psb
+		article.cont-plan-program
+			h3.title-plan-program
+				|¿Qué consigues 
+				span.rojo
+					|con psb?
+			div.plan-program-psb
+				div.detail-program
+					div.icon-detail-program
+						img.img-responsive(src="images/Img-Icon-PG-01.png", alt="")
+					p.text-detail-program
+						|Sé un profesional integral, en la capacidad de acercarse de manera creativa al desarrollo de los distintos géneros de la televisión y nuevas plataformas.
+				div.detail-program
+					div.icon-detail-program
+						img.img-responsive(src="images/Img-Icon-PG-02.png", alt="")
+					p.text-detail-program
+						|Sé un experto en realización y programación en televisión y nuevas plataformas tecnológicas.
+				div.detail-program
+					div.icon-detail-program
+						img.img-responsive(src="images/Img-Icon-PG-03.png", alt="")
+					p.text-detail-program
+						|Prepárate para ser un experto en producción y postproducción, con base teórica - práctica para el mundo laboral. 
+			
+			div.cont-btn-plan
+				button.btn-default-psb.bg-rojo
+					|Plan de Estudios
+				i.icon-arrow-btn
+					|>
+	//-Objetivos
+	section.cont-all-landing-psb.objetives-section-realizacion
+		article.cont-objetives-program
+			h3.title-plan-program
+				|objetivos 
+				span.rojo
+					|del programa
+			div.cont-list-program
+				ul.list-header-program
+					li.item-list-header
+						i.icon-check
+							i.icon-check.rojo
+								include ../templates/partials/icon-check.pug
+						p.text-list-program.gris
+							|Ser un profesional experto en el desarrollo y producción de contenido para todos los géneros existentes, para prepararse al rápido cambio de la tecnología.
+					li.item-list-header
+						i.icon-check
+							i.icon-check.rojo
+								include ../templates/partials/icon-check.pug
+						p.text-list-program.gris
+							|Ofrecer la capacitación y experiencia necesaria en el ámbito audiovisual para formar profesionales competentes para un mundo laboral exigente.
+					li.item-list-header
+						i.icon-check
+							i.icon-check.rojo
+								include ../templates/partials/icon-check.pug
+						p.text-list-program.gris
+							|Otorgar fuertes fundamentos audiovisuales y estéticos, con las habilidades necesarias para los mercados emergentes.
+					li.item-list-header
+						i.icon-check
+							i.icon-check.rojo
+								include ../templates/partials/icon-check.pug
+						p.text-list-program.gris
+							|Dar la posibilidad a nuestros estudiantes de proyectarse en corto tiempo hacía el mercado Publicitario.
+	//-General
+	section.cont-all-landing-psb
+		article.cont-info-payment
+			div.cont-detail-payment
+				div.detail-payment
+					i.icon-check.rojo
+						include ../templates/partials/icon-check.pug
+					p.text-detail-payment
+						|CRÉDITO 
+						br
+						span.rojo
+							|DIRECTO
+				div.detail-payment
+					i.icon-check.rojo
+						include ../templates/partials/icon-check.pug
+					p.text-detail-payment
+						|DESCUENTO 30%
+						br
+						span.rojo
+							|MATRÍCULA
+				div.detail-payment
+					i.icon-check.rojo
+						include ../templates/partials/icon-check.pug
+					p.text-detail-payment
+						|HOMOLOGACIÓN 
+						br
+						span.rojo
+							|DE ESTUDIOS
+			
+			div.cont-btn-plan
+				button.btn-default-psb.bg-rojo
+					|Quiero más información
+				i.icon-arrow-btn
+					|>
+			
+			
+block Scripts
+	//-Acá se ponen js que solo vayan en ésta página
+
