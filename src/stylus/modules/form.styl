@@ -1,11 +1,15 @@
 .form-program
-	margin 16px auto 0
+	margin 25px auto 0
 	width 90%
 
     .group-form
 		display inline-block
+<<<<<<< HEAD
 		height 56px
 		margin-bottom 8px
+=======
+		height 65px
+>>>>>>> fd5a8dbfbab0a7faec82683f80356c3c2da1bad1
 		position relative
 		width 100%
 		
@@ -27,7 +31,7 @@
 			font-weight $light
 			left 12px
 			position absolute
-			top 33px
+			top 9px
 			transition all 0.4s
 		
 		.input-default,
@@ -39,9 +43,8 @@
 			font-size 0.8rem
 			font-weight $light
 			height 30px
-			margin-top 24px
 			padding 0 8px
-			width 94%
+			width 96%
 		
 		.select-default
 			appearance none
@@ -53,7 +56,21 @@
 				background-size 5px 5px, 5px 5px, 1.5em 1.5em
 				background-repeat no-repeat
 
+		input.error,
+		select.error
+			animation shake 0.82s cubic-bezier(.36,.07,.19,.97) both
+			transform translate3d(0, 0, 0)
+			backface-visibility hidden
+			perspective 1000px
 		
+		i.error
+			position absolute
+			bottom 18px
+			left 12px
+			color $rojo
+			font-size 50%
+			font-weight $bold
+
 		.cont-check-terms
 			display block
 			cursor pointer

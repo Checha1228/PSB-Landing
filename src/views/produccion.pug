@@ -4,6 +4,7 @@ extends ../templates/base.pug
 //-Etiqueta Title
 block title
 	-var titulo = "produccion"
+	-var color = "fucsia"
 	title Programa | Producción Gráfica para Medios Publicitarios
 
 //-Etiqueta Metadescription
@@ -47,6 +48,7 @@ block content
 				
 				p.intro-form-program
 					|Conviértete en el experto que quieres ser
+<<<<<<< HEAD:src/views/index.pug
 				
 				form.form-program(action="informacion")
 					div.group-form
@@ -95,6 +97,11 @@ block content
 					div.cont-btn-form
 						button.btn-default-landing(class="bg-"+color)
 							|Enviar
+=======
+
+				include ../templates/partials/form.pug
+
+>>>>>>> fd5a8dbfbab0a7faec82683f80356c3c2da1bad1:src/views/produccion.pug
 		//-Redes
 		article.cont-social-psb(class="bg-"+color)
 			div.cont-icon-social-facebook
@@ -129,7 +136,7 @@ block content
 						|Gracias por confiar en nosotros, uno de nuestros asesores se comunicará pronto.
 				
 					div.cont-btn-form
-						button.btn-default-landing
+						button#Aceptar.btn-default-landing
 							|Aceptar
 	//-Que
 	section.cont-all-landing-psb

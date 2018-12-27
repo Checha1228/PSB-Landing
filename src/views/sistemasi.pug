@@ -4,6 +4,7 @@ extends ../templates/base.pug
 //-Etiqueta Title
 block title
 	-var titulo = "sistemas"
+	-var color = "azul"
 	title Programa | Sistemas Informáticos
 
 //-Etiqueta Metadescription
@@ -43,7 +44,10 @@ block content
 				
 				p.intro-form-program
 					|Conviértete en el experto que quieres ser
+				include ../templates/partials/form.pug
 				
+				
+<<<<<<< HEAD
 				form.form-program(action="informacion")
 					div.group-form
 						input#nombre.input-default(type="text", name="nombre", required)
@@ -91,6 +95,8 @@ block content
 					div.cont-btn-form
 						button.btn-default-landing.bg-azul
 							|Enviar
+=======
+>>>>>>> fd5a8dbfbab0a7faec82683f80356c3c2da1bad1
 		//-Redes
 		article.cont-social-psb.bg-azul
 			div.cont-icon-social-facebook
