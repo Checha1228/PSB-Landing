@@ -4,7 +4,7 @@
  * @link 
  * @link Lady Castillo - ladycastdg@gmail.com
  * @license 
- *Fri Dec 21 2018 00:00:09 GMT-0500 (-05)
+ *Wed Dec 26 2018 20:53:23 GMT-0500 (-05)
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -70,7 +70,7 @@ svg {
   width: 100%;
 }
 .cont-all-landing-psb.formulario-header-produccion {
-  background-image: url("../images/Img-Banner-PGraficaM.png");
+  background-color: #242437;
   padding-top: 116px;
 }
 .cont-all-landing-psb.objetives-section-produccion {
@@ -81,7 +81,7 @@ svg {
   background-size: cover;
 }
 .cont-all-landing-psb.formulario-header-realizacion {
-  background-image: url("../images/Img-Banner-RAudiovisualM.png");
+  background-color: #242437;
   padding-top: 116px;
 }
 .cont-all-landing-psb.objetives-section-realizacion {
@@ -92,7 +92,7 @@ svg {
   background-size: cover;
 }
 .cont-all-landing-psb.formulario-header-gestion {
-  background-image: url("../images/Img-Banner-GComercialM.png");
+  background-color: #242437;
   padding-top: 116px;
 }
 .cont-all-landing-psb.objetives-section-gestion {
@@ -103,7 +103,7 @@ svg {
   background-size: cover;
 }
 .cont-all-landing-psb.formulario-header-sistema {
-  background-image: url("../images/Img-Banner-SInformaticosM.png");
+  background-color: #242437;
   padding-top: 116px;
 }
 .cont-all-landing-psb.objetives-section-sistema {
@@ -166,7 +166,7 @@ svg {
 .cont-plan-program,
 .cont-objetives-program,
 .cont-info-payment {
-  padding: 20px 0;
+  padding: 30px 0;
 }
 .cont-plan-program .plan-program-psb,
 .cont-objetives-program .plan-program-psb,
@@ -199,17 +199,17 @@ svg {
 .cont-objetives-program .plan-program-psb .detail-program .text-detail-program,
 .cont-info-payment .plan-program-psb .detail-program .text-detail-program {
   color: #666;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300;
   margin: 20px auto 0;
 }
 .title-plan-program {
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 700;
   margin: 0 auto 10px;
   text-align: center;
   text-transform: uppercase;
-  width: 90%;
+  width: 100%;
 }
 .container-fluid:before,
 .container-fluid:after {
@@ -336,7 +336,7 @@ svg {
 }
 .cont-form-program .title-form-program {
   font-size: 1.6rem;
-  font-weight: 300;
+  font-weight: 700;
   margin: 0 auto 10px;
   text-align: center;
   width: 90%;
@@ -345,9 +345,9 @@ svg {
   color: #393938;
   font-size: 1.2rem;
   font-weight: 300;
-  margin: 0 auto;
+  margin: 0 auto 26px;
   text-align: center;
-  width: 60%;
+  width: 70%;
 }
 .detail-payment {
   display: -webkit-box;
@@ -382,6 +382,7 @@ svg {
 .group-form {
   display: inline-block;
   height: 56px;
+  margin-bottom: 8px;
   position: relative;
   width: 100%;
 }
@@ -389,9 +390,11 @@ svg {
 .group-form select:focus ~ label,
 .group-form input:valid ~ label,
 .group-form select:valid ~ label {
-  color: #393938;
-  font-size: 50%;
+  color: #34334f;
+  font-size: 64%;
   font-weight: 700;
+  left: 0;
+  top: 38px;
   -o-transform: translate3d(0, -208%, 0);
   -ms-transform: translate3d(0, -208%, 0);
   -webkit-transform: translate3d(0, -208%, 0);
@@ -577,7 +580,7 @@ svg {
   color: #fff;
   cursor: pointer;
   border: 0;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   font-weight: 300;
   padding: 8px 0;
   -o-transition: all 0.4s;
@@ -607,7 +610,7 @@ svg {
   color: #666;
 }
 .cont-btn-menu {
-  margin: 20px auto;
+  margin: 6px auto 20px;
   width: 72%;
 }
 .cont-btn-menu .btn-menu {
@@ -616,10 +619,11 @@ svg {
   color: #eaeaea;
   font-size: 0.8rem;
   padding: 10px;
+  width: 100%;
 }
 .text-info-menu {
   text-align: center;
-  margin: 0;
+  margin: 20px 0 0;
 }
 .icon-arrow-btn {
   background-color: #e69902;
@@ -627,7 +631,7 @@ svg {
   font-family: 'roboto', sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  height: 34px;
+  height: 38px;
   position: absolute;
   right: 0;
   top: 0;
@@ -718,6 +722,28 @@ svg {
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   transform: rotate(-45deg);
+}
+.icon-carrer {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  display: block;
+  float: left;
+  height: 20px;
+  margin-right: 6px;
+  width: 20px;
+}
+.icon-carrer.c-pg {
+  background-image: url("../images/Img-Icon-PG-02.png");
+}
+.icon-carrer.c-ra {
+  background-image: url("../images/Img-Icon-RA-01.png");
+}
+.icon-carrer.c-gc {
+  background-image: url("../images/Img-Icon-GC-01.png");
+}
+.icon-carrer.c-si {
+  background-image: url("../images/Img-Icon-SI-02.png");
 }
 .cont-all-landing-psb.formulario-header {
   position: relative;
@@ -841,7 +867,7 @@ svg {
   display: block;
   float: left;
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   position: relative;
   padding: 14px 16px;
   text-decoration: none;
@@ -1398,6 +1424,24 @@ svg {
   }
   .icon-arrow {
     display: none;
+  }
+  .cont-all-landing-psb.formulario-header-produccion {
+    background-image: url("../images/Img-Banner-PGraficaM.png");
+  }
+  .cont-all-landing-psb.formulario-header-realizacion {
+    background-image: url("../images/Img-Banner-RAudiovisualM.png");
+  }
+  .cont-all-landing-psb.formulario-header-gestion {
+    background-image: url("../images/Img-Banner-GComercialM.png");
+  }
+  .cont-all-landing-psb.formulario-header-sistema {
+    background-image: url("../images/Img-Banner-SInformaticosM.png");
+  }
+  .cont-all-landing-psb.objetives-section-produccion,
+  .cont-all-landing-psb.objetives-section-sistema,
+  .cont-all-landing-psb.objetives-section-realizacion,
+  .cont-all-landing-psb.objetives-section-gestion {
+    padding: 100px 0;
   }
   .cont-all-landing-psb .cont-modal-form .cont-info-modal {
     width: 30%;

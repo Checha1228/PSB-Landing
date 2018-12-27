@@ -57,23 +57,29 @@ block content
 						label.label-default(for="numerocontacto")
 							|Número de contacto
 					div.group-form
-						select.select-default.arrow-select(name="")
-							option(value="0")
-								|Bogotá
+						select.select-default.arrow-select(name="ciudad", required)
+							option
+								|
 							option(value="1")
+								|Bogotá
+							option(value="2")
 								|Cali
-						label.label-default(for="")
+						label.label-default(for="ciudad")
 							|Ciudad
 					div.group-form
-						select.select-default.arrow-select(name="")
-							option(value="0")
-								|Tecnología en Producción Gráfica para Medios Publicitarios
+						select.select-default.arrow-select(name="carrera", required)
+							option
+								|
 							option(value="1")
+								|Tecnología en Producción Gráfica para Medios Publicitarios
+							option(value="2")
 								|Realización Audiovisiual
-							option(value="2" selected)
-								|Gestión Comercial Internacional
 							option(value="3")
-								|Sistemas Informáticos		
+								|Gestión Comercial Internacional
+							option(value="4")
+								|Sistemas Informáticos	
+						label.label-default(for="carrera")
+							|Carrera		
 					div.group-form
 						label.cont-check-terms
 							input.option-terms(type="radio", name="terms")

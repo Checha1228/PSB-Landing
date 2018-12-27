@@ -18,7 +18,7 @@
 <body>
   <!--Header-->
   <header class="cont-menu-psb">
-    <div class="menu-landing-psb" id="menu-psb-landing"><a class="item-menu cont-logo-psb" href="http://www.politecnicosantafedebogota.edu.co/portal/" target="_blank"><img class="img-responsive" src="images/Img-Logo-PSB.png" alt="Logo-PSB"></a><a class="item-menu active" href="index.html">Producción Gráfica para Medios Publicitarios<i class="icon-arrow"></i></a><a class="item-menu" href="realizaciona.html">Realización Audiovisiual<i class="icon-arrow"></i></a><a class="item-menu" href="gestionc.html">Gestión Comercial Internacional<i class="icon-arrow"></i></a><a class="item-menu" href="sistemasi.html">Sistemas Informáticos<i class="icon-arrow"></i></a><a class="item-menu cont-info-menu">
+    <div class="menu-landing-psb" id="menu-psb-landing"><a class="item-menu cont-logo-psb" href="http://www.politecnicosantafedebogota.edu.co/portal/" target="_blank"><img class="img-responsive" src="images/Img-Logo-PSB.png" alt="Logo-PSB"></a><a class="item-menu active" href="index.html">Producción Gráfica para Medios Publicitarios<i class="icon-carrer c-pg"></i><i class="icon-arrow"></i></a><a class="item-menu" href="realizaciona.html">Realización Audiovisiual<i class="icon-carrer c-ra"></i><i class="icon-arrow"></i></a><a class="item-menu" href="gestionc.html">Gestión Comercial Internacional<i class="icon-carrer c-gc"></i><i class="icon-arrow"></i></a><a class="item-menu" href="sistemasi.html">Sistemas Informáticos<i class="icon-carrer c-si"></i><i class="icon-arrow"></i></a><a class="item-menu cont-info-menu">
         <p class="text-info-menu">Inscríbete hoy</p>
         <div class="cont-btn-menu">
           <button class="btn-menu">Con el 30% de descuento AQUÍ</button>
@@ -76,19 +76,22 @@
             <label class="label-default" for="numerocontacto">Número de contacto</label>
           </div>
           <div class="group-form">
-            <select class="select-default arrow-select" name="">
-              <option value="0">Bogotá</option>
-              <option value="1">Cali</option>
+            <select class="select-default arrow-select" name="ciudad" required>
+              <option></option>
+              <option value="1">Bogotá</option>
+              <option value="2">Cali</option>
             </select>
-            <label class="label-default" for="">Ciudad</label>
+            <label class="label-default" for="ciudad">Ciudad</label>
           </div>
           <div class="group-form">
-            <select class="select-default arrow-select" name="">
-              <option value="0" selected>Tecnología en Producción Gráfica para Medios Publicitarios</option>
-              <option value="1">Realización Audiovisiual</option>
-              <option value="2">Gestión Comercial Internacional</option>
-              <option value="3">Sistemas Informáticos	</option>
+            <select class="select-default arrow-select" name="carrera" required>
+              <option></option>
+              <option value="1">Tecnología en Producción Gráfica para Medios Publicitarios</option>
+              <option value="2">Realización Audiovisiual</option>
+              <option value="3">Gestión Comercial Internacional</option>
+              <option value="4">Sistemas Informáticos	</option>
             </select>
+            <label class="label-default" for="carrera">Carrera</label>
           </div>
           <div class="group-form">
             <label class="cont-check-terms">
