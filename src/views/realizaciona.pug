@@ -48,58 +48,7 @@ block content
 				
 				p.intro-form-program
 					|Conviértete en el experto que quieres ser
-<<<<<<< HEAD
-				
-				form.form-program(action="informacion")
-					div.group-form
-						input#nombre.input-default(type="text", name="nombre", required)
-						label.label-default.fuscia(for="nombre")
-							|Nombre y Apellido
-					div.group-form
-						input.input-default(type="text", name="email", required)
-						label.label-default(for="email")
-							|Correo electrónico
-					div.group-form
-						input.input-default(type="text", name="numerocontacto", required)
-						label.label-default(for="numerocontacto")
-							|Número de contacto
-					div.group-form
-						select.select-default.arrow-select(name="ciudad", required)
-							option
-								|
-							option(value="1")
-								|Bogotá
-							option(value="2")
-								|Cali
-						label.label-default(for="ciudad")
-							|Ciudad
-					div.group-form
-						select.select-default.arrow-select(name="carrera", required)
-							option
-								|
-							option(value="1")
-								|Tecnología en Producción Gráfica para Medios Publicitarios
-							option(value="2")
-								|Realización Audiovisiual
-							option(value="3")
-								|Gestión Comercial Internacional
-							option(value="4")
-								|Sistemas Informáticos	
-						label.label-default(for="carrera")
-							|Carrera
-					div.group-form
-						label.cont-check-terms
-							input.option-terms(type="radio", name="terms")
-							span.icon-checkmark.bg-rojo
-							p.text-input-terms
-								|Acepto Política de Privacidad y las Condiciones de Uso.
-					
-					div.cont-btn-form
-						button.btn-default-landing.bg-rojo
-							|Enviar
-=======
-				include ../templates/partials/form.pug		
->>>>>>> fd5a8dbfbab0a7faec82683f80356c3c2da1bad1
+				include ../templates/partials/form.pug			
 		//-Redes
 		article.cont-social-psb.bg-rojo
 			div.cont-icon-social-facebook
@@ -134,7 +83,7 @@ block content
 						|Gracias por confiar en nosotros, uno de nuestros asesores se comunicará pronto.
 				
 					div.cont-btn-form
-						button.btn-default-landing
+						button#Aceptar.btn-default-landing
 							|Aceptar
 	//-Que
 	section.cont-all-landing-psb
