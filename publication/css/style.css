@@ -4,7 +4,7 @@
  * @link 
  * @link Lady Castillo - ladycastdg@gmail.com
  * @license 
- *Tue Jan 01 2019 21:15:49 GMT-0500 (-05)
+ *Tue Jan 01 2019 22:09:30 GMT-0500 (-05)
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -506,26 +506,8 @@ svg {
   background-position: 2px 5px;
   background-image: url("../images/img-icon-checkmark.png");
   background-repeat: no-repeat;
-}
-.group-form .cont-check-terms input:checked ~ .icon-checkmark.bg-fucsia {
-  background-color: #ab056b;
-  border: 5px solid #ab056b;
-}
-.group-form .cont-check-terms input:checked ~ .icon-checkmark.bg-rojo {
-  background-color: #ba0207;
-  border: 5px solid #ba0207;
-}
-.group-form .cont-check-terms input:checked ~ .icon-checkmark.bg-amarillo {
-  background-color: #e69902;
-  border: 5px solid #e69902;
-}
-.group-form .cont-check-terms input:checked ~ .icon-checkmark.bg-azul {
-  background-color: #039bb6;
-  border: 5px solid #039bb6;
-}
-.group-form .cont-check-terms input:checked ~ .icon-checkmark.bg-morado {
-  background-color: #36025c;
-  border: 5px solid #36025c;
+  background-color: #fff;
+  border: 5px solid #fff;
 }
 .group-form .cont-check-terms input:checked ~ .icon-checkmark:after {
   display: block;
@@ -606,6 +588,9 @@ svg {
   position: relative;
   width: 80%;
 }
+.cont-btn-plan a.btn-default-psb {
+  padding: 8px 20%;
+}
 .cont-btn-plan .btn-default-psb {
   color: #fff;
   cursor: pointer;
@@ -661,7 +646,7 @@ svg {
   font-family: 'roboto', sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
-  height: 38px;
+  height: 37px;
   position: absolute;
   right: 0;
   top: 0;
@@ -905,6 +890,9 @@ svg {
 }
 .cont-menu-psb .menu-landing-psb .item-menu.cont-logo-psb {
   width: 70px;
+  border-bottom: 0;
+}
+.cont-menu-psb .menu-landing-psb .item-menu.cont-logo-psb:hover {
   border-bottom: 0;
 }
 .cont-menu-psb .menu-landing-psb .item-menu:hover,
@@ -1632,20 +1620,31 @@ svg {
   .cont-social-psb .title-name-social {
     display: block;
     float: left;
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 300;
-    margin-left: 10px;
+    margin-top: 6px;
     text-align: center;
+    width: 100%;
   }
   .cont-social-psb .cont-icon-social {
-    float: left;
-    width: 14%;
+    margin: 0 auto;
+    width: 10%;
   }
   .cont-icon-social-facebook,
   .cont-icon-social-instagram,
   .cont-icon-social-linkedin {
     padding: 0 40px;
     width: 33%;
+    -o-transition: all 0.6 linear;
+    -ms-transition: all 0.6 linear;
+    -webkit-transition: all 0.6 linear;
+    -moz-transition: all 0.6 linear;
+    transition: all 0.6 linear;
+  }
+  .cont-icon-social-facebook :hover,
+  .cont-icon-social-instagram :hover,
+  .cont-icon-social-linkedin :hover {
+    color: #242437;
   }
   .cont-plan-program .plan-program-psb .detail-program {
     margin: 0 20px;
@@ -1653,7 +1652,7 @@ svg {
   }
   .cont-btn-plan {
     margin: 40px auto 20px;
-    width: 30%;
+    width: 40%;
   }
   .cont-list-program {
     width: 100%;
@@ -1679,7 +1678,8 @@ svg {
   .cont-footer-psb .cont-info-footer .cont-about-us,
   .cont-footer-psb .cont-info-footer .cont-contact,
   .cont-footer-psb .cont-info-footer .cont-map-psb {
-    width: 34%;
+    margin: 0 60px;
+    width: 60%;
   }
   .cont-footer-psb .cont-contact .list-contact .item-contact {
     margin-bottom: 6px;

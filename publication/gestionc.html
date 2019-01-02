@@ -8,7 +8,7 @@
   <meta name="description" content="Programas Politécnico Santafé de Bogotá">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/Landing-PSB.min.css">
+  <link rel="stylesheet" href="css/style.css">
   <!-- Web Fonts-->
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" type="text/css"><!--[if lt IE]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -59,7 +59,8 @@
       </div>
       <div class="cont-form-program">
         <h2 class="title-form-program amarillo">Inscríbete con el 30% de DESCUENTO</h2>
-        <p class="intro-form-program">Conviértete en el experto que quieres ser
+        <p class="intro-form-program">Conviértete en el experto que quieres ser</p>
+        <form class="form-program" id="FormPSB">
           <div class="group-form">
             <input class="input-default" id="nombre" type="text" name="nombre" required>
             <label class="label-default amarillo" for="nombre">Nombre y Apellido</label>
@@ -69,21 +70,16 @@
             <label class="label-default" for="email">Correo electrónico</label>
           </div>
           <div class="group-form">
-<<<<<<< HEAD
             <input class="input-default" type="number" name="numerocontacto" required maxlength="10">
             <label class="label-default" for="numerocontacto">Número de contacto</label>
-=======
-            <input class="input-default" type="text" name="numeroContacto" required>
-            <label class="label-default" for="numeroContacto">Número de contacto</label>
->>>>>>> 44cd36c3ae21e0ef3705fb4620498b4a08c1e024
           </div>
           <div class="group-form">
-            <select class="select-default arrow-select" name="ciudad" required>
-              <option></option>
+            <select class="select-default arrow-select" name="ciudad">
+              <option value="0"></option>
               <option value="1">Bogotá</option>
               <option value="2">Villavicencio</option>
             </select>
-            <label class="label-default" for="ciudad">Ciudad</label>
+            <label class="label-default" for="">Ciudad</label>
           </div>
           <div class="group-form">
             <select class="select-default arrow-select" id="Programa" name="carrera" required>
@@ -97,14 +93,14 @@
           </div>
           <div class="group-form">
             <label class="cont-check-terms">
-              <input class="option-terms" type="radio" name="terms"><span class="icon-checkmark bg-amarillo"></span>
+              <input class="option-terms" type="radio" name="terms"><span class="icon-checkmark"></span>
               <p class="text-input-terms">Acepto Política de Privacidad y las Condiciones de Uso.</p>
             </label>
           </div>
           <div class="cont-btn-form">
             <button class="btn-default-landing bg-amarillo">Enviar</button>
           </div>
-        </p>
+        </form>
       </div>
     </article>
     <article class="cont-social-psb bg-amarillo">
@@ -219,9 +215,7 @@
           <p class="text-detail-payment">HOMOLOGACIÓN <br><span class="amarillo">DE ESTUDIOS</span></p>
         </div>
       </div>
-      <div class="cont-btn-plan">
-        <button class="btn-default-psb bg-amarillo">Quiero más información</button><i class="icon-arrow-btn">></i>
-      </div>
+      <div class="cont-btn-plan"><a class="btn-default-psb bg-amarillo" href="#FormPSB">Quiero más información</a></div>
     </article>
   </section>
   <!--Footer-->
@@ -256,6 +250,7 @@
   <!--/-Footer-->
   <!--Scripts-->
   <script src="js/libs/jquery.js"></script>
-  <script src="js/libs.min.js"></script>
+  <script src="js/libs/jquery.validate.js"></script>
+  <script src="js/libs/bootstrap.min.js"></script>
   <script src="js/psb.js"></script>
 </body></html>
