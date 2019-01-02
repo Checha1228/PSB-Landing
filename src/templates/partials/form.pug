@@ -1,7 +1,7 @@
 form#FormPSB.form-program
     div.group-form
         input#nombre.input-default(type="text", name="nombre", required)
-        label.label-default.fuscia(for="nombre")
+        label.label-default(class=color, for="nombre")
             |Nombre y Apellido
     div.group-form
         input.input-default(type="text", name="email", required)
@@ -22,7 +22,9 @@ form#FormPSB.form-program
         label.label-default(for="")
             |Ciudad
     div.group-form
-        select.select-default.arrow-select(name="program")
+        select#Programa.select-default.arrow-select(name="carrera", required)
+            option
+                |
             option(value="Producción Gráfica", selected= titulo == 'produccion')
                 |Tecnología en Producción Gráfica para Medios Publicitarios
             option(value="Realización Audiovisiual", selected= titulo == 'realizacion')
@@ -30,8 +32,10 @@ form#FormPSB.form-program
             option(value="Gestión Comercial", selected= titulo == 'gestion')
                 |Gestión Comercial Internacional
             option(value="Sistemas Informáticos", selected= titulo == 'sistemas')
-				|Sistemas Infromáticos
-	div.group-form
+                |Sistemas Informáticos		
+        label.label-default(for="carrera")
+            |Carrera
+    div.group-form
         label.cont-check-terms
             input.option-terms(type="radio", name="terms")
             span.icon-checkmark(class="bg-"+color)

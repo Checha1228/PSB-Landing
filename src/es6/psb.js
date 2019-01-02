@@ -24,9 +24,12 @@ jQuery(document).ready(function($) {
 
 	$("#FormPSB").submit(function (e) { 
 		e.preventDefault();
+		
+		dataLayer.push({'eventCategory': 'formulario','eventAction': 'click','eventLabel': $("#Programa").val(),'eventvalue': '','event': 'eventClick'});
+
 		if($("#FormPSB").valid()){
 			$.ajax({
-				url: '',
+				url: 'guardar.php',
 				data: $("#FormPSB").serialize(),
 				success: function(data) {
 					jQuery('.cont-modal-form').fadeIn();
