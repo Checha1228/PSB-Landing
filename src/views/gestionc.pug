@@ -44,7 +44,7 @@ block content
 				p.intro-form-program
 					|Conviértete en el experto que quieres ser
 				
-				form.form-program(action="informacion")
+				
 					div.group-form
 						input#nombre.input-default(type="text", name="nombre", required)
 						label.label-default.fuscia(for="nombre")
@@ -54,7 +54,7 @@ block content
 						label.label-default(for="email")
 							|Correo electrónico
 					div.group-form
-						input.input-default(type="text", name="numerocontacto", required)
+						input.input-default(type="number", name="numerocontacto", required, maxlength="10")
 						label.label-default(for="numerocontacto")
 							|Número de contacto
 					div.group-form
@@ -64,7 +64,7 @@ block content
 							option(value="1")
 								|Bogotá
 							option(value="2")
-								|Cali
+								|Villavicencio
 						label.label-default(for="ciudad")
 							|Ciudad
 					div.group-form

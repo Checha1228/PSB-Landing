@@ -4,12 +4,7 @@
 
     .group-form
 		display inline-block
-<<<<<<< HEAD
-		height 56px
-		margin-bottom 8px
-=======
 		height 65px
->>>>>>> fd5a8dbfbab0a7faec82683f80356c3c2da1bad1
 		position relative
 		width 100%
 		
@@ -17,11 +12,12 @@
 		select:focus ~ label,
 		input:valid ~ label,
 		select:valid ~ label
+			appearance none
 			color $moradopsb
 			font-size 64%
 			font-weight $bold
 			left 0		
-			top 38px
+			top 14px
 			transform translate3d(0, -208%, 0)
 		
 		.label-default
@@ -36,6 +32,7 @@
 		
 		.input-default,
 		.select-default
+			appearance none
 			border 1px solid $grisclaro
 			border-radius 12px
 			color $grisclaro

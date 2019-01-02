@@ -7,16 +7,18 @@ form#FormPSB.form-program
         input.input-default(type="text", name="email", required)
         label.label-default(for="email")
             |Correo electrónico
-    div.group-form
-        input.input-default(type="text", name="numeroContacto", required)
-        label.label-default(for="numeroContacto")
-            |Número de contacto
+	div.group-form
+		input.input-default(type="number", name="numerocontacto", required, maxlength="10")
+		label.label-default(for="numerocontacto")
+			|Número de contacto
     div.group-form
         select.select-default.arrow-select(name="ciudad")
             option(value="0")
-                |Bogotá
+                |
             option(value="1")
-                |Cali
+                |Bogotá
+            option(value="2")
+                |Villavicencio
         label.label-default(for="")
             |Ciudad
     div.group-form
@@ -28,8 +30,8 @@ form#FormPSB.form-program
             option(value="Gestión Comercial", selected= titulo == 'gestion')
                 |Gestión Comercial Internacional
             option(value="Sistemas Informáticos", selected= titulo == 'sistemas')
-                |Sistemas Informáticos	
-    div.group-form
+				|Sistemas Infromáticos
+	div.group-form
         label.cont-check-terms
             input.option-terms(type="radio", name="terms")
             span.icon-checkmark(class="bg-"+color)

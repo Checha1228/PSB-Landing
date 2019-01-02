@@ -4,7 +4,7 @@
  * @link 
  * @link Lady Castillo - ladycastdg@gmail.com
  * @license 
- *Wed Dec 26 2018 20:55:21 GMT-0500 (-05)
+ *Tue Jan 01 2019 20:47:46 GMT-0500 (-05)
  */
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -381,12 +381,7 @@ svg {
 }
 .group-form {
   display: inline-block;
-<<<<<<< HEAD
-  height: 56px;
-  margin-bottom: 8px;
-=======
   height: 65px;
->>>>>>> fd5a8dbfbab0a7faec82683f80356c3c2da1bad1
   position: relative;
   width: 100%;
 }
@@ -394,11 +389,14 @@ svg {
 .group-form select:focus ~ label,
 .group-form input:valid ~ label,
 .group-form select:valid ~ label {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   color: #34334f;
   font-size: 64%;
   font-weight: 700;
   left: 0;
-  top: 38px;
+  top: 14px;
   -o-transform: translate3d(0, -208%, 0);
   -ms-transform: translate3d(0, -208%, 0);
   -webkit-transform: translate3d(0, -208%, 0);
@@ -421,6 +419,9 @@ svg {
 }
 .group-form .input-default,
 .group-form .select-default {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border: 1px solid #666;
   border-radius: 12px;
   color: #666;
@@ -1571,7 +1572,8 @@ svg {
   .cont-menu-psb .menu-landing-psb.responsive-menu:not(:first-child) {
     display: block;
   }
-  .icon-arrow {
+  .icon-arrow,
+  .icon-carrer {
     display: none;
   }
   .cont-all-landing-psb.formulario-header-produccion {
@@ -1685,6 +1687,9 @@ svg {
   .cont-footer-psb .cont-contact .list-contact .item-contact .icon-item-contact {
     margin-right: 16px;
     width: 30px;
+  }
+  .group-form .cont-check-terms {
+    width: 60%;
   }
 }
 @-moz-keyframes shake {
